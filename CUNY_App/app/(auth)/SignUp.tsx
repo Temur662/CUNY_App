@@ -7,19 +7,28 @@ import * as ImagePicker from 'expo-image-picker'
 import { Button, Icon, TextInput } from 'react-native-paper';
 import { Menu, MenuOptions, MenuOption, MenuTrigger } from 'react-native-popup-menu';
 import { BlurView } from 'expo-blur';
-
+import { useSchedule } from '@/providers/SchdeuleProvider';
+import { useRouter } from 'expo-router';
+import { Profile } from '@/types';
+import { useProfile } from '@/providers/ProfileProvider';
 const SignUp = () => {
   const [ currentStage, setCurrentStage ] = useState(0)
   const [ firstName, setFirstName ] = useState('')
   const [ lastName, setLastName ] = useState('')
   const [ studentEmail, setStudentEmail ] = useState('')
+  const [ emplid, setEmplid ] = useState('')
   const [ ethnicity, setEthnicity ] = useState('')
   const [ usCitizen, setUSCitizen ] = useState('')
   const [ personalDone, setPersonalDone ] = useState(false)
+  const { onSetProfile } = useProfile()
   const [ major, setMajor ] = useState('')
   const [ studentYear, setStudentYear ] = useState('')
   const [ carrerChoice, setCareerChoice ] = useState('')
   const[ schedule, setSchedule ] = useState<ImagePicker.ImagePickerAsset>()
+  const [ scheduleInfo, setScheduleInfo ] = useState([])
+  const { onSetScheduleInfo } = useSchedule()
+  const [ careerInfoDone, setCareerInfoDone ] = useState(false)
+  const router = useRouter()
   const EthnicityPicker = () => {
     const choices = [ 'American Indian/Alaska Native', 'Asian', 'Black or African American', 'Native Hawaiian or other Pacific Islander', 'White' ]
     return(
@@ -107,7 +116,7 @@ const SignUp = () => {
   }
   const { GoogleGenerativeAI } = require("@google/generative-ai");
   const genAI = new GoogleGenerativeAI(process.env.EXPO_PUBLIC_GEMINI_TOKEN);
-  const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash"});
+  const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash", generationConfig: { responseMimeType: "application/json",  }});
   const queryTest = async () => {
     console.log('called')
     const result = await model.generateContent([
@@ -129,29 +138,53 @@ const SignUp = () => {
       mediaTypes : ImagePicker.MediaTypeOptions.Images,
       allowsEditing : true
     }
-
     const result = await ImagePicker.launchImageLibraryAsync(options)
 
     if( !result.canceled ){
       const img = result.assets[0]
+      setSchedule(img)
       const base64 = await FileSystem.readAsStringAsync(img.uri, { encoding: 'base64' });
       const imagepart = {
         inlineData: {
         data: base64,
         mimeType : 'image/jpeg'
       }}
-      const prompt = 'explain this image'
+      const prompt = "Based on this image of a students schedule return as a json array in the following form: '{ 'classname' : name of the class, 'day' : weekday of student class, 'start time' : start time of student class, 'end time' : end time of student class, 'location': room location of class }'"
       const gemini = await model.generateContent([prompt, imagepart]);
-      console.log(gemini.response.text());
+      setScheduleInfo(gemini.response.text())
+      onSetScheduleInfo(gemini.response.text())
     }
   }
   useEffect(() => {
-   if( firstName && lastName && studentEmail && ethnicity && usCitizen ){
+   if( firstName && lastName && studentEmail && ethnicity && usCitizen && emplid ){
     setPersonalDone(true)
    }else{
     setPersonalDone(false)
    }
-  }, [firstName, lastName, studentEmail, ethnicity, usCitizen])
+  }, [firstName, lastName, studentEmail, ethnicity, usCitizen, emplid])
+  const setProfile = () => {
+    const newProfile : Profile =  {
+        firstName : firstName,
+        lastName : lastName,
+        emplid : emplid,
+        student_email : studentEmail,
+        ethnicty : ethnicity,
+        usCitizen : usCitizen,
+        scheduleImg : schedule,
+        scheduleInfo : scheduleInfo,
+        major : major,
+        studentYear : studentYear,
+        careerChoice : carrerChoice
+    }
+    onSetProfile(newProfile)
+  }
+  useEffect(() => {
+    if( ethnicity && schedule && carrerChoice && studentYear){
+        setCareerInfoDone(true)
+    }else{
+        setCareerInfoDone(false)
+    }
+  }, [ethnicity, schedule, carrerChoice, studentYear])
   const stageInfo = ['Personal Information', 'Career Information']
   return (
     <View className='flex-1'>
@@ -192,6 +225,13 @@ const SignUp = () => {
                         style={{ backgroundColor : 'white', width : '90%', alignSelf : 'center'}}
                     />
                     <TextInput 
+                    mode='outlined'
+                    label={'Emplid'}
+                    value={emplid}
+                    onChangeText={setEmplid}
+                    style={{ backgroundColor : 'white', width : '90%', alignSelf : 'center'}}
+                    />
+                    <TextInput 
                         mode='outlined'
                         label={'Student Email'}
                         value={studentEmail}
@@ -205,6 +245,9 @@ const SignUp = () => {
                     <Text className='text-lg pl-5'>Are you a U.S Citizen?</Text>
                     <View style={{ backgroundColor : 'white', width : '90%', alignSelf : 'center', borderRadius : 5, height: 40, justifyContent : 'center'}}>
                         <Citizen />
+                    </View>
+                    <View className=' mt-4 justify-end'>
+                        <Button mode='contained' buttonColor='green' style={{ width : '90%', alignSelf : 'center'}} disabled={!personalDone} onPress={() => {setCurrentStage(1)} }>Continue</Button>
                     </View>
                     </>
                     )
@@ -223,7 +266,7 @@ const SignUp = () => {
                         <View style={{ backgroundColor : 'white', width : '90%', alignSelf : 'center', borderRadius : 5, height: 40, justifyContent : 'center'}}>
                             <CareerChoice />
                         </View>
-                        <Pressable className='h-[140] w-[150] items-center justify-center bg-white' onPress={onSelectImage} style={{ borderRadius : 20 }}>
+                        <Pressable className='h-[140] w-[150] items-center justify-center bg-white self-center' onPress={onSelectImage} style={{ borderRadius : 20 }}>
                         {schedule ? <Image source={{ uri : schedule.uri || undefined }} style={{width: "100%", height:"100%", objectFit: "contain"}} /> : (
                             <View className=' overflow-hidden w-[100%] h-[100%]' style={{ borderRadius : 20 }}>
                                 <BlurView intensity={50} style={{ backgroundColor : '#E0E0E0' , height : '100%', width : '100%', borderRadius : 20, alignItems : 'center', justifyContent : 'center'}} >
@@ -234,12 +277,13 @@ const SignUp = () => {
                                 </View>
                                 )}
                         </Pressable>
+                        <View className='mt-8 justify-end'>
+                            <Button mode='contained' buttonColor='green' style={{ width : '90%', alignSelf : 'center'}} disabled={!careerInfoDone} onPress={() => {setProfile();router.back()}}>Submit</Button>
+                        </View>
                     </>
                 )}
                 </View>
-                <View className='flex-1 justify-end'>
-                    <Button mode='contained' buttonColor='green' style={{ width : '90%', alignSelf : 'center'}} disabled={!personalDone} onPress={() => setCurrentStage(1)}>Continue</Button>
-                </View>
+                
                 
              
         </SafeAreaView>

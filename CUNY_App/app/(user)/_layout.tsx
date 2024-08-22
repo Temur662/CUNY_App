@@ -5,11 +5,12 @@ import { TabBarIcon } from '@/components/navigation/TabBarIcon';
 import { Colors } from '@/constants/Colors';
 import { useColorScheme } from '@/hooks/useColorScheme';
 import { useAuth } from '@/providers/AuthProvider';
+import { useLogin } from '@/providers/LoginProvider';
 
 export default function TabLayout() {
   const colorScheme = useColorScheme();
-  const { session } = useAuth()
-  if( !session ){
+  const { login } = useLogin()
+  if( !login ){
     <Redirect href={'/SignIn'}/>
   }
   return (

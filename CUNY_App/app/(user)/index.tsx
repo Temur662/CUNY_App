@@ -1,11 +1,14 @@
-import { Image, StyleSheet, Platform } from 'react-native';
+import { Image, StyleSheet, Platform, View, Text } from 'react-native';
 
 import { HelloWave } from '@/components/HelloWave';
 import ParallaxScrollView from '@/components/ParallaxScrollView';
 import { ThemedText } from '@/components/ThemedText';
 import { ThemedView } from '@/components/ThemedView';
-
+import Schedule from 'f-react-native-schedule';
+import WeekView from 'react-native-week-view';
+import { useProfile } from '@/providers/ProfileProvider';
 export default function HomeScreen() {
+  const { profile } = useProfile()
   return (
     <ParallaxScrollView
       headerBackgroundColor={{ light: '#A1CEDC', dark: '#1D3D47' }}
@@ -13,40 +16,31 @@ export default function HomeScreen() {
         <Image
           source={require('@/assets/images/partial-react-logo.png')}
           style={styles.reactLogo}
-          
         />
       }>
-      <ThemedView style={styles.titleContainer}>
-        <ThemedText type="title">Welcome!</ThemedText>
-        <HelloWave />
-      </ThemedView>
-      <ThemedView style={styles.stepContainer}>
-        <ThemedText type="subtitle">Step 1: Try it</ThemedText>
-        <ThemedText>
-          Edit <ThemedText type="defaultSemiBold">app/(tabs)/index.tsx</ThemedText> to see changes.
-          Press{' '}
-          <ThemedText type="defaultSemiBold">
-            {Platform.select({ ios: 'cmd + d', android: 'cmd + m' })}
-          </ThemedText>{' '}
-          to open developer tools.
-        </ThemedText>
-      </ThemedView>
-      <ThemedView style={styles.stepContainer}>
-        <ThemedText type="subtitle">Step 2: Explore</ThemedText>
-        <ThemedText>
-          Tap the Explore tab to learn more about what's included in this starter app.
-        </ThemedText>
-      </ThemedView>
-      <ThemedView style={styles.stepContainer}>
-        <ThemedText type="subtitle">Step 3: Get a fresh start</ThemedText>
-        <ThemedText>
-          When you're ready, run{' '}
-          <ThemedText type="defaultSemiBold">npm run reset-project</ThemedText> to get a fresh{' '}
-          <ThemedText type="defaultSemiBold">app</ThemedText> directory. This will move the current{' '}
-          <ThemedText type="defaultSemiBold">app</ThemedText> to{' '}
-          <ThemedText type="defaultSemiBold">app-example</ThemedText>.
-        </ThemedText>
-      </ThemedView>
+      <View className='flex-row flex-1'>
+        <View>
+          <Image source={{ uri : 'https://i.sstatic.net/l60Hf.png' }} height={80} width={80} style={{objectFit : 'cover', borderRadius : 50}}/>
+        </View>
+        <View className='flex-col border flex-1 self-center justify-center'>
+          <View>
+            <Text className='text-center font-bold text-lg'>{profile.firstName} {profile.lastName}</Text>
+          </View>
+          <View>
+            <Text className='text-center font-bold text-gray-400'>Empil ID:{profile.emplid}</Text>
+          </View>
+        </View>
+      </View>
+      <View className='flex-col'>
+        <Text className='text-xl font-bold'>Weekly Schedule</Text>
+        <View>
+          <Image 
+            source={{ uri : profile.scheduleImg?.uri }}
+            style={{ height : 200, width : '100%', objectFit : 'cover', borderRadius : 10 }}
+          />
+        </View>
+        <Text className='text-xl font-bold'>Upcoming</Text>
+      </View>
     </ParallaxScrollView>
   );
 }
