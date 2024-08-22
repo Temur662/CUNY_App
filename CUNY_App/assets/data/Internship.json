@@ -1,0 +1,238 @@
+{
+    "internships": [
+      {
+        "company": "Google",
+        "position": "Software Engineering Intern",
+        "industry": "Technology",
+        "responsibilities": "Develop and test software, collaborate with cross-functional teams, participate in design discussions.",
+        "required_skills": "Proficiency in programming languages (e.g., Python, Java), problem-solving skills, teamwork.",
+        "salary": "$6,000 - $8,000/month"
+      },
+      {
+        "company": "Goldman Sachs",
+        "position": "Investment Banking Intern",
+        "industry": "Finance",
+        "responsibilities": "Assist in financial modeling, research market trends, support client presentations.",
+        "required_skills": "Analytical skills, proficiency in Excel, financial knowledge.",
+        "salary": "$6,000 - $7,500/month"
+      },
+      {
+        "company": "Tesla",
+        "position": "Mechanical Engineering Intern",
+        "industry": "Automotive",
+        "responsibilities": "Assist in the design and development of automotive components, perform simulations and tests.",
+        "required_skills": "Solid understanding of CAD software, mechanical design, and engineering principles.",
+        "salary": "$4,000 - $6,500/month"
+      },
+      {
+        "company": "Amazon",
+        "position": "Business Analyst Intern",
+        "industry": "E-commerce",
+        "responsibilities": "Analyze data to improve operations, create reports, collaborate with different departments.",
+        "required_skills": "Analytical skills, proficiency in Excel and SQL, communication skills.",
+        "salary": "$5,000 - $7,000/month"
+      },
+      {
+        "company": "Microsoft",
+        "position": "UX Design Intern",
+        "industry": "Technology",
+        "responsibilities": "Assist in user research, create wireframes and prototypes, collaborate with design teams.",
+        "required_skills": "Proficiency in design tools (e.g., Figma, Sketch), creativity, user-centric design approach.",
+        "salary": "$5,000 - $7,500/month"
+      },
+      {
+        "company": "Procter & Gamble",
+        "position": "Marketing Intern",
+        "industry": "Consumer Goods",
+        "responsibilities": "Support marketing campaigns, conduct market research, analyze consumer behavior.",
+        "required_skills": "Marketing knowledge, analytical skills, creativity.",
+        "salary": "$3,500 - $5,500/month"
+      },
+      {
+        "company": "IBM",
+        "position": "Data Science Intern",
+        "industry": "Technology",
+        "responsibilities": "Analyze large datasets, develop machine learning models, present insights to stakeholders.",
+        "required_skills": "Proficiency in Python, statistical analysis, machine learning.",
+        "salary": "$5,500 - $7,000/month"
+      },
+      {
+        "company": "Pfizer",
+        "position": "Biomedical Engineering Intern",
+        "industry": "Pharmaceuticals",
+        "responsibilities": "Assist in the development of medical devices, conduct research, support clinical trials.",
+        "required_skills": "Knowledge of biomedical engineering principles, research skills, teamwork.",
+        "salary": "$4,000 - $6,000/month"
+      },
+      {
+        "company": "Deloitte",
+        "position": "Consulting Intern",
+        "industry": "Consulting",
+        "responsibilities": "Support client engagements, conduct market research, assist in strategy development.",
+        "required_skills": "Analytical thinking, communication skills, teamwork.",
+        "salary": "$5,000 - $7,000/month"
+      },
+      {
+        "company": "Facebook (Meta)",
+        "position": "Software Engineering Intern",
+        "industry": "Technology",
+        "responsibilities": "Develop and test new features, work on large-scale projects, collaborate with engineers.",
+        "required_skills": "Proficiency in programming languages, problem-solving, collaboration.",
+        "salary": "$6,000 - $8,000/month"
+      },
+      {
+        "company": "Johnson & Johnson",
+        "position": "Supply Chain Intern",
+        "industry": "Healthcare",
+        "responsibilities": "Assist in supply chain planning, optimize inventory levels, support logistics operations.",
+        "required_skills": "Supply chain knowledge, analytical skills, problem-solving.",
+        "salary": "$4,000 - $6,000/month"
+      },
+      {
+        "company": "Nike",
+        "position": "Product Management Intern",
+        "industry": "Retail",
+        "responsibilities": "Assist in product development, conduct market research, support product launches.",
+        "required_skills": "Understanding of product lifecycle, market research, teamwork.",
+        "salary": "$4,000 - $6,500/month"
+      },
+      {
+        "company": "Oracle",
+        "position": "Cloud Engineering Intern",
+        "industry": "Technology",
+        "responsibilities": "Assist in cloud solutions development, troubleshoot issues, collaborate with cross-functional teams.",
+        "required_skills": "Cloud computing knowledge, programming skills, teamwork.",
+        "salary": "$5,000 - $7,500/month"
+      },
+      {
+        "company": "SpaceX",
+        "position": "Aerospace Engineering Intern",
+        "industry": "Aerospace",
+        "responsibilities": "Support spacecraft design and testing, conduct simulations, assist in research.",
+        "required_skills": "Aerospace engineering knowledge, CAD skills, problem-solving.",
+        "salary": "$5,500 - $7,500/month"
+      },
+      {
+        "company": "Adobe",
+        "position": "Graphic Design Intern",
+        "industry": "Technology",
+        "responsibilities": "Create visual content, assist in design projects, collaborate with the marketing team.",
+        "required_skills": "Proficiency in Adobe Creative Suite, creativity, attention to detail.",
+        "salary": "$4,000 - $6,000/month"
+      },
+      {
+        "company": "Accenture",
+        "position": "Technology Consulting Intern",
+        "industry": "Consulting",
+        "responsibilities": "Support technology implementation projects, conduct market research, assist in client presentations.",
+        "required_skills": "Analytical skills, technology knowledge, communication.",
+        "salary": "$5,000 - $7,000/month"
+      },
+      {
+        "company": "Unilever",
+        "position": "Sustainability Intern",
+        "industry": "Consumer Goods",
+        "responsibilities": "Support sustainability projects, conduct environmental impact assessments, collaborate with teams.",
+        "required_skills": "Environmental science knowledge, analytical skills, teamwork.",
+        "salary": "$3,500 - $5,000/month"
+      },
+      {
+        "company": "General Electric (GE)",
+        "position": "Electrical Engineering Intern",
+        "industry": "Energy",
+        "responsibilities": "Assist in electrical system design, conduct tests, support research and development.",
+        "required_skills": "Electrical engineering knowledge, CAD skills, problem-solving.",
+        "salary": "$4,500 - $6,500/month"
+      },
+      {
+        "company": "LinkedIn",
+        "position": "Marketing Analytics Intern",
+        "industry": "Technology",
+        "responsibilities": "Analyze marketing data, create reports, support marketing strategies.",
+        "required_skills": "Analytical skills, proficiency in Excel and SQL, marketing knowledge.",
+        "salary": "$4,500 - $6,500/month"
+      },
+      {
+        "company": "KPMG",
+        "position": "Audit Intern",
+        "industry": "Finance",
+        "responsibilities": "Assist in audit planning, perform financial analysis, support audit teams.",
+        "required_skills": "Accounting knowledge, analytical skills, attention to detail.",
+        "salary": "$4,000 - $6,000/month"
+      },
+      {
+        "company": "Apple",
+        "position": "Hardware Engineering Intern",
+        "industry": "Technology",
+        "responsibilities": "Assist in hardware design and testing, collaborate with engineering teams, conduct research.",
+        "required_skills": "Hardware design knowledge, CAD skills, teamwork.",
+        "salary": "$5,500 - $7,500/month"
+      },
+      {
+        "company": "PepsiCo",
+        "position": "Supply Chain Intern",
+        "industry": "Consumer Goods",
+        "responsibilities": "Support supply chain operations, optimize logistics, conduct data analysis.",
+        "required_skills": "Supply chain knowledge, analytical skills, problem-solving.",
+        "salary": "$4,000 - $6,000/month"
+      },
+      {
+        "company": "McKinsey & Company",
+        "position": "Business Analyst Intern",
+        "industry": "Consulting",
+        "responsibilities": "Support client engagements, perform market research, assist in strategy development.",
+        "required_skills": "Analytical skills, communication skills, teamwork.",
+        "salary": "$5,000 - $7,500/month"
+      },
+      {
+        "company": "BP",
+        "position": "Environmental Science Intern",
+        "industry": "Energy",
+        "responsibilities": "Assist in environmental impact assessments, support sustainability projects, conduct research.",
+        "required_skills": "Environmental science knowledge, analytical skills, problem-solving.",
+        "salary": "$4,000 - $6,000/month"
+      },
+      {
+        "company": "Netflix",
+        "position": "Content Production Intern",
+        "industry": "Entertainment",
+        "responsibilities": "Assist in content development, support production teams, collaborate on creative projects.",
+        "required_skills": "Creativity, project management skills, understanding of film production processes.",
+        "salary": "$4,500 - $6,500/month"
+       },
+       {
+        "company": "Visa",
+        "position": "Data Analytics Intern",
+        "industry": "Finance",
+        "responsibilities": "Analyze transaction data, create reports, collaborate with data scientists to improve financial models.",
+        "required_skills": "Proficiency in SQL, Python, data visualization skills, analytical thinking.",
+        "salary": "$5,000 - $7,000/month"
+       },
+          {
+        "company": "Twitter",
+        "position": "Software Engineering Intern",
+        "industry": "Technology",
+        "responsibilities": "Develop and optimize microservices, collaborate with product teams, participate in code reviews.",
+        "required_skills": "Proficiency in JavaScript, Python, experience with microservices architecture.",
+        "salary": "$6,000 - $8,000/month"
+          },
+          {
+        "company": "Spotify",
+        "position": "User Experience Research Intern",
+        "industry": "Technology",
+        "responsibilities": "Conduct user research, analyze user feedback, support product development with user insights.",
+        "required_skills": "Strong communication skills, understanding of user research methods, analytical thinking.",
+        "salary": "$4,500 - $6,500/month"
+          },
+          {
+        "company": "Rivian",
+        "position": "Electrical Engineering Intern",
+        "industry": "Automotive",
+        "responsibilities": "Assist in the design of electrical systems, perform testing and validation, support product development.",
+        "required_skills": "Knowledge of electrical engineering principles, experience with CAD software, problem-solving skills.",
+        "salary": "$5,000 - $7,500/month"
+        }
+        ]
+      }
+      
+  

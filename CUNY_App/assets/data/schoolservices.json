@@ -1,0 +1,469 @@
+{
+    "Academic_Advisors": [
+      {
+        "name": "Dr. Emily Richardson",
+        "department": "Center for Advising and Academic Success (CAAS)",
+        "availability": "Monday - Friday, 9:00 AM - 4:30 PM",
+        "location": "South Administration Building (1A), Room 101",
+        "contact": "erichardson@csi.cuny.edu"
+      },
+      {
+        "name": "Prof. James Cooper",
+        "department": "Pre-Health Advising",
+        "availability": "Tuesday & Thursday, 1:00 PM - 3:00 PM",
+        "location": "South Administration Building (1A), Room 112",
+        "contact": "jcooper@csi.cuny.edu"
+      },
+      {
+        "name": "Dr. Sarah Johnson",
+        "department": "Engineering and Environmental Science Advising",
+        "availability": "Wednesday & Friday, 11:00 AM - 2:00 PM",
+        "location": "North Academic Center (2N), Room 216",
+        "contact": "sjohnson@csi.cuny.edu"
+      },
+      {
+        "name": "Dr. Peter Lee",
+        "department": "Humanities & Social Sciences Advising",
+        "availability": "Monday, Wednesday, Friday 10:00 AM - 2:00 PM",
+        "location": "South Administration Building (1A), Room 205",
+        "contact": "plee@csi.cuny.edu"
+      },
+      {
+        "name": "Ms. Laura Martinez",
+        "department": "Business & Economics Advising",
+        "availability": "Monday - Thursday, 9:00 AM - 1:00 PM",
+        "location": "North Academic Center (2N), Room 227",
+        "contact": "lmartinez@csi.cuny.edu"
+      }
+    ],
+    "Tutors": [
+      {
+        "subject": "Mathematics",
+        "tutors": [
+          {
+            "name": "Mark Lee",
+            "classes_covered": "Calculus I, II, III",
+            "availability": "Monday, Wednesday, 12:00 PM - 4:00 PM",
+            "location": "Mathematics Department (5S), Room 219",
+            "contact": "mlee@csi.cuny.edu"
+          },
+          {
+            "name": "Jenny Park",
+            "classes_covered": "Linear Algebra, Differential Equations",
+            "availability": "Tuesday, Thursday, 2:00 PM - 5:00 PM",
+            "location": "Mathematics Department (5S), Room 217",
+            "contact": "jpark@csi.cuny.edu"
+          },
+          {
+            "name": "David Chen",
+            "classes_covered": "Precalculus, Calculus I",
+            "availability": "Friday, 10:00 AM - 2:00 PM",
+            "location": "Mathematics Department (5S), Room 220",
+            "contact": "dchen@csi.cuny.edu"
+          }
+        ]
+      },
+      {
+        "subject": "Physics",
+        "tutors": [
+          {
+            "name": "Tina Gonzales",
+            "classes_covered": "Physics 101, 102, 203",
+            "availability": "Tuesday, Thursday, 1:00 PM - 5:00 PM",
+            "location": "Physics Department (6S), Room 118",
+            "contact": "tgonzales@csi.cuny.edu"
+          },
+          {
+            "name": "Dr. Alan Thompson",
+            "classes_covered": "General Physics I, II",
+            "availability": "Monday, Friday, 10:00 AM - 1:00 PM",
+            "location": "Physics Department (6S), Room 110",
+            "contact": "athompson@csi.cuny.edu"
+          },
+          {
+            "name": "Lisa Morales",
+            "classes_covered": "Physics for Engineers, Electromagnetism",
+            "availability": "Wednesday, 11:00 AM - 3:00 PM",
+            "location": "Physics Department (6S), Room 115",
+            "contact": "lmorales@csi.cuny.edu"
+          }
+        ]
+      },
+      {
+        "subject": "Chemistry",
+        "tutors": [
+          {
+            "name": "Dr. Samuel Green",
+            "classes_covered": "General Chemistry, Organic Chemistry",
+            "availability": "Monday, Friday, 10:00 AM - 1:00 PM",
+            "location": "Chemistry Department (6S), Room 119",
+            "contact": "sgreen@csi.cuny.edu"
+          },
+          {
+            "name": "Anna Bell",
+            "classes_covered": "Organic Chemistry I, II",
+            "availability": "Tuesday, Thursday, 12:00 PM - 3:00 PM",
+            "location": "Chemistry Department (6S), Room 122",
+            "contact": "abell@csi.cuny.edu"
+          },
+          {
+            "name": "Michael White",
+            "classes_covered": "Physical Chemistry, Biochemistry",
+            "availability": "Wednesday, Friday, 1:00 PM - 4:00 PM",
+            "location": "Chemistry Department (6S), Room 125",
+            "contact": "mwhite@csi.cuny.edu"
+          }
+        ]
+      },
+      {
+        "subject": "Computer Science",
+        "tutors": [
+          {
+            "name": "Daniel Carter",
+            "classes_covered": "Intro to Programming, Data Structures, Artificial Intelligence",
+            "availability": "Monday, Wednesday, 2:00 PM - 6:00 PM",
+            "location": "Computer Science Department (1P), Room 220",
+            "contact": "dcarter@csi.cuny.edu"
+          },
+          {
+            "name": "Megan White",
+            "classes_covered": "Algorithms, Operating Systems, Object-Oriented Software Design",
+            "availability": "Tuesday, Thursday, 3:00 PM - 5:00 PM",
+            "location": "Computer Science Department (1P), Room 222",
+            "contact": "mwhite@csi.cuny.edu"
+          },
+          {
+            "name": "John Kim",
+            "classes_covered": "Software Engineering, Artificial Intelligence, Computer Architecture",
+            "availability": "Friday, 12:00 PM - 4:00 PM",
+            "location": "Computer Science Department (1P), Room 223",
+            "contact": "jkim@csi.cuny.edu"
+          }
+        ]
+      },
+      {
+        "subject": "Biology",
+        "tutors": [
+          {
+            "name": "Dr. Jessica Brown",
+            "classes_covered": "General Biology, Anatomy & Physiology",
+            "availability": "Tuesday, Thursday, 1:00 PM - 5:00 PM",
+            "location": "Biology Department (6S), Room 209",
+            "contact": "jbrown@csi.cuny.edu"
+          },
+          {
+            "name": "Eric Miles",
+            "classes_covered": "Genetics, Molecular Biology",
+            "availability": "Monday, Wednesday, 12:00 PM - 4:00 PM",
+            "location": "Biology Department (6S), Room 213",
+            "contact": "emiles@csi.cuny.edu"
+          },
+          {
+            "name": "Samantha Lee",
+            "classes_covered": "Microbiology, Evolutionary Biology",
+            "availability": "Friday, 10:00 AM - 2:00 PM",
+            "location": "Biology Department (6S), Room 215",
+            "contact": "slee@csi.cuny.edu"
+          }
+        ]
+      }
+    ],
+    "Counselors": [
+      {
+        "name": "Dr. Maria Lopez",
+        "department": "Counseling Center",
+        "availability": "Monday - Thursday, 9:00 AM - 5:00 PM",
+        "location": "North Administration Building (1A), Room 109",
+        "contact": "mlopez@csi.cuny.edu"
+      },
+      {
+        "name": "John Smith",
+        "department": "Career Services",
+        "availability": "Tuesday & Thursday, 10:00 AM - 3:00 PM",
+        "location": "North Administration Building (1A), Room 104",
+        "contact": "jsmith@csi.cuny.edu"
+      },
+      {
+        "name": "Dr. Angela Brown",
+        "department": "Wellness Center",
+        "availability": "Wednesday & Friday, 12:00 PM - 6:00 PM",
+        "location": "Student Center (1C), Room 225",
+        "contact": "abrown@csi.cuny.edu"
+      },
+      {
+        "name": "Ms. Linda Parker",
+        "department": "Academic Counseling",
+        "availability": "Monday - Friday, 10:00 AM - 4:00 PM",
+        "location": "South Administration Building (1A), Room 210",
+        "contact": "lparker@csi.cuny.edu"
+      },
+      {
+        "name": "Dr. James Wilson",
+        "department": "Financial Aid Counseling",
+        "availability": "Tuesday, Thursday, 9:00 AM - 3:00 PM",
+        "location": "South Administration Building (1A), Room 105",
+        "contact": "jwilson@csi.cuny.edu"
+      }
+    ],
+    "Financial_Aid_Office": [
+      {
+        "name": "Amanda White",
+        "department": "Financial Aid Office",
+        "availability": "Monday - Friday, 9:00 AM - 5:00 PM",
+        "location": "North Administration Building (1A), Room 104",
+        "contact": "awhite@csi.cuny.edu"
+      },
+      {
+        "name": "Peter Green",
+        "department": "Financial Aid Office",
+        "availability": "Tuesday & Thursday, 11:00 AM - 4:00 PM",
+        "location": "North Administration Building (1A), Room 105",
+        "contact": "pgreen@csi.cuny.edu"
+      },
+      {
+        "name": "Laura Kingsley",
+        "department": "Financial Aid Office",
+        "availability": "Monday, Wednesday, Friday, 10:00 AM - 2:00 PM",
+        "location": "North Administration Building (1A), Room 106",
+        "contact": "lkingsley@csi.cuny.edu"
+      },
+      {
+        "name": "James Wong",
+        "department": "Financial Aid Office",
+        "availability": "Monday - Thursday, 9:00 AM - 4:00 PM",
+        "location": "North Administration Building (1A), Room 107",
+        "contact": "jwong@csi.cuny.edu"
+      },
+      {
+        "name": "Ellen Harris",
+        "department": "Financial Aid Office",
+        "availability": "Monday - Friday, 8:30 AM - 5:30 PM",
+        "location": "North Administration Building (1A), Room 108",
+        "contact": "eharris@csi.cuny.edu"
+      }
+    ],
+    "Other_Offices": [
+      {
+        "name": "Registrar’s Office",
+        "location": "North Administration Building (1A), Room 201",
+        "hours": "Monday - Friday, 9:00 AM - 5:00 PM",
+        "contact": "registrar@csi.cuny.edu",
+        "additional_services": "Transcript requests, enrollment verification, registration assistance."
+      },
+      {
+        "name": "Student Life Office",
+        "location": "North Administration Building (1A), Room 206",
+        "hours": "Monday - Friday, 10:00 AM - 6:00 PM",
+        "contact": "studentlife@csi.cuny.edu",
+        "additional_services": "Student clubs, leadership programs, campus events."
+      },
+      {
+        "name": "International Students Office",
+        "location": "North Administration Building (1A), Room 207",
+        "hours": "Monday - Thursday, 9:00 AM - 4:00 PM",
+        "contact": "intlstudents@csi.cuny.edu",
+        "additional_services": "Visa support, international student orientation, cultural programs."
+      },
+      {
+        "name": "Disability Services Office",
+        "location": "North Administration Building (1A), Room 218",
+        "hours": "Monday - Friday, 9:00 AM - 5:00 PM",
+        "contact": "disabilityservices@csi.cuny.edu",
+        "additional_services": "Academic accommodations, accessibility resources, support services for students with disabilities."
+      },
+      {
+        "name": "Veterans Affairs Office",
+        "location": "North Administration Building (1A), Room 212",
+        "hours": "Monday - Friday, 10:00 AM - 4:00 PM",
+        "contact": "veterans@csi.cuny.edu",
+        "additional_services": "Support for veteran students, benefits guidance, academic advising."
+      },
+      {
+        "name": "Career and Professional Development Institute",
+        "location": "North Administration Building (1A), Room 116",
+        "hours": "Monday - Thursday, 9:00 AM - 6:00 PM, Friday 9:00 AM - 5:00 PM",
+        "contact": "cpdi@csi.cuny.edu",
+        "additional_services": "Career counseling, resume workshops, job fairs, internship placements."
+      },
+      {
+        "name": "Writing Center",
+        "location": "North Academic Center (2N), Room 220",
+        "hours": "Monday - Friday, 10:00 AM - 5:00 PM",
+        "contact": "writingcenter@csi.cuny.edu",
+        "additional_services": "Tutoring for writing assignments, thesis development, citation guidance."
+      },
+      {
+        "name": "Student Wellness and Counseling Center",
+        "location": "North Administration Building (1A), Room 1222",
+        "hours": "Monday - Friday, 9:00 AM - 5:00 PM",
+        "contact": "wellness@csi.cuny.edu",
+        "additional_services": "Mental health counseling, stress management workshops, wellness programs."
+      }
+    ],
+    "Additional_Tutors_and_Resources_at_CSI": [
+      {
+        "name": "Math Resource Center",
+        "location": "South Administration Building (1A), Room 112",
+        "hours": "Monday - Thursday, 9:00 AM - 5:00 PM; Friday 9:00 AM - 3:00 PM",
+        "contact": "mathresource@csi.cuny.edu",
+        "services": "Tutoring for all levels of mathematics, exam preparation, and study groups."
+      },
+      {
+        "name": "Computer Science Resource Center",
+        "location": "Computer Science Department (1P), Room 223",
+        "hours": "Monday - Friday, 10:00 AM - 5:00 PM",
+        "contact": "csresource@csi.cuny.edu",
+        "services": "Tutoring for all computer science courses, including programming, data structures, algorithms, and more."
+      },
+      {
+        "name": "Physics Resource Center",
+        "location": "Physics Department (6S), Room 110",
+        "hours": "Monday - Friday, 9:00 AM - 5:00 PM",
+        "contact": "physicsresource@csi.cuny.edu",
+        "services": "Tutoring for all levels of physics, lab support, and study sessions."
+      }
+    ],
+    "Counseling_and_Additional_Support": [
+      {
+        "name": "Dr. Maria Lopez",
+        "department": "Counseling Center",
+        "availability": "Monday - Thursday, 9:00 AM - 5:00 PM",
+        "location": "North Administration Building (1A), Room 109",
+        "contact": "mlopez@csi.cuny.edu"
+      },
+      {
+        "name": "John Smith",
+        "department": "Career Services",
+        "availability": "Tuesday & Thursday, 10:00 AM - 3:00 PM",
+        "location": "North Administration Building (1A), Room 104",
+        "contact": "jsmith@csi.cuny.edu"
+      },
+      {
+        "name": "Dr. Angela Brown",
+        "department": "Wellness Center",
+        "availability": "Wednesday & Friday, 12:00 PM - 6:00 PM",
+        "location": "Student Center (1C), Room 225",
+        "contact": "abrown@csi.cuny.edu"
+      }
+    ],
+    "ASAP": {
+      "description": "The ASAP program is designed to help associate degree students graduate on time by providing comprehensive academic, financial, and personal support. The program includes free tuition, textbooks, and MetroCards, as well as personalized academic advising, career counseling, and tutoring.",
+      "key_resources": {
+        "Program_Director": {
+          "name": "Dr. Lisa French",
+          "location": "Building 2A, Room 205",
+          "availability": "Monday - Friday, 9:00 AM - 5:00 PM",
+          "contact": "lisa.french@csi.cuny.edu"
+        },
+        "Academic_Advisor": {
+          "name": "Emily Rivera",
+          "location": "Building 2A, Room 207",
+          "availability": "Monday - Thursday, 9:00 AM - 5:00 PM",
+          "contact": "emily.rivera@csi.cuny.edu"
+        },
+        "Career_Counselor": {
+          "name": "John Evans",
+          "location": "Building 2A, Room 210",
+          "availability": "Tuesday & Thursday, 11:00 AM - 4:00 PM",
+          "contact": "john.evans@csi.cuny.edu"
+        }
+      },
+      "additional_services": [
+        "MetroCards",
+        "Book Vouchers",
+        "Tutoring (available across various subjects)",
+        "Study Groups",
+        "Workshops on Time Management, Study Skills, and Career Planning"
+      ]
+    },
+    "SEEK": {
+        "description": "The SEEK program provides comprehensive academic, personal, and financial support to students who have the potential to succeed in college but may require additional assistance due to educational or economic disadvantages.",
+        "key_resources": {
+          "Program_Director": {
+            "name": "Dr. Mark Thompson",
+            "location": "Building 1A, Room 312",
+            "availability": "Monday - Friday, 9:00 AM - 5:00 PM",
+            "contact": "mark.thompson@csi.cuny.edu"
+          },
+          "Academic_Advisor": {
+            "name": "Sarah Jackson",
+            "location": "Building 1A, Room 315",
+            "availability": "Monday - Thursday, 10:00 AM - 4:00 PM",
+            "contact": "sarah.jackson@csi.cuny.edu"
+          },
+          "Financial_Aid_Counselor": {
+            "name": "Laura Harris",
+            "location": "Building 1A, Room 317",
+            "availability": "Tuesday & Thursday, 9:00 AM - 3:00 PM",
+            "contact": "laura.harris@csi.cuny.edu"
+          }
+        },
+        "additional_services": [
+          "Supplemental Instruction (SI) Sessions",
+          "Personal and Academic Counseling",
+          "Financial Assistance (grants for books, transportation, etc.)",
+          "Peer Mentorship",
+          "Special workshops and seminars"
+        ]
+      },
+      "ACE": {
+        "description": "The ACE program is designed to help students complete their bachelor’s degrees by providing financial, academic, and personal support. It follows a similar model to the ASAP program but is focused on bachelor’s degree students.",
+        "key_resources": {
+          "Program_Director": {
+            "name": "Dr. Natalie Green",
+            "location": "Building 2N, Room 103",
+            "availability": "Monday - Friday, 9:00 AM - 5:00 PM",
+            "contact": "natalie.green@csi.cuny.edu"
+          },
+          "Academic_Advisor": {
+            "name": "Michael Brown",
+            "location": "Building 2N, Room 105",
+            "availability": "Monday - Thursday, 10:00 AM - 5:00 PM",
+            "contact": "michael.brown@csi.cuny.edu"
+          },
+          "Career_Services_Advisor": {
+            "name": "David Carter",
+            "location": "Building 2N, Room 108",
+            "availability": "Tuesday & Thursday, 12:00 PM - 4:00 PM",
+            "contact": "david.carter@csi.cuny.edu"
+          }
+        },
+        "additional_services": [
+          "Dedicated Advising Sessions",
+          "Career Planning and Job Placement Support",
+          "Financial Support (covering textbooks, transportation, etc.)",
+          "Workshops and Seminars (on career development, financial literacy, etc.)",
+          "Access to internships and other experiential learning opportunities"
+        ]
+      },
+      "Federal_Work_Study_Program": {
+        "description": "The Federal Work-Study Program provides part-time employment opportunities for undergraduate and graduate students with financial need, allowing them to earn money to help pay for their educational expenses.",
+        "key_resources": {
+          "Program_Coordinator": {
+            "name": "James Wright",
+            "location": "Financial Aid Office, North Administration Building (1A), Room 110",
+            "availability": "Monday - Friday, 9:00 AM - 5:00 PM",
+            "contact": "james.wright@csi.cuny.edu"
+          },
+          "Job_Placement_Officer": {
+            "name": "Rachel Davis",
+            "location": "Financial Aid Office, North Administration Building (1A), Room 115",
+            "availability": "Monday - Thursday, 10:00 AM - 4:00 PM",
+            "contact": "rachel.davis@csi.cuny.edu"
+          },
+          "Student_Payroll_Coordinator": {
+            "name": "Linda Gomez",
+            "location": "Financial Aid Office, North Administration Building (1A), Room 120",
+            "availability": "Tuesday & Thursday, 9:00 AM - 3:00 PM",
+            "contact": "linda.gomez@csi.cuny.edu"
+          }
+        },
+        "additional_services": [
+          "Assistance with job placement on campus",
+          "Support in finding community service opportunities",
+          "Workshops on workplace skills, resume building, and professional development",
+          "Guidance on balancing work and academic responsibilities"
+        ]
+      }
+    }
+    
