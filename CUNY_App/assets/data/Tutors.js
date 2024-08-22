@@ -3,6 +3,7 @@ export const Tutors = [
       "subject": "Mathematics",
       'backdrop' : 'https://www.freeimageslive.co.uk/files/images003/math.jpg',
       "tutors": [
+        {},
         {
           "name": "Mark Lee",
           "classes_covered": "Calculus I, II, III",
@@ -23,7 +24,8 @@ export const Tutors = [
           "availability": "Friday, 10:00 AM - 2:00 PM",
           "location": "Mathematics Department (5S), Room 220",
           "contact": "dchen@csi.cuny.edu"
-        }
+        },
+        {}
       ]
     },
     {

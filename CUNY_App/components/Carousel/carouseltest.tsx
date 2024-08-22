@@ -101,7 +101,7 @@ return (
       )}
       scrollEventThrottle={16}
       renderItem={({ item, index }) => {
-        if (!item )  {
+        if (!item.name )  {
           return <View style={{ width: EMPTY_ITEM_SIZE }} />;
         }
 
@@ -113,7 +113,7 @@ return (
 
         const translateY = scrollX.interpolate({
           inputRange,
-          outputRange: [100, 50, 100],
+          outputRange: [0, -50, 0],
           extrapolate: 'clamp',
         });
      
