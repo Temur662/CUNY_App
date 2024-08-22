@@ -1,0 +1,523 @@
+{
+    "jobs": [
+      {
+        "company": "Apple",
+        "position": "Software Engineer",
+        "industry": "Technology",
+        "responsibilities": [
+          "Develop and maintain software applications.",
+          "Collaborate with cross-functional teams to define, design, and ship new features.",
+          "Write clean, maintainable code that adheres to best practices.",
+          "Participate in code reviews to ensure high-quality software.",
+          "Troubleshoot and debug software issues."
+        ],
+        "required_skills": [
+          "Proficiency in programming languages (e.g., Python, Java, C++).",
+          "Strong problem-solving skills.",
+          "Experience with software development lifecycle.",
+          "Ability to work in a fast-paced environment."
+        ],
+        "salary": "$100,000 - $150,000/year"
+      },
+      {
+        "company": "Morgan Stanley",
+        "position": "Financial Analyst",
+        "industry": "Finance",
+        "responsibilities": [
+          "Analyze financial data to support investment decisions.",
+          "Prepare financial reports and presentations for senior management.",
+          "Assist in financial modeling and forecasting.",
+          "Conduct market research to identify trends and opportunities."
+        ],
+        "required_skills": [
+          "Strong analytical skills.",
+          "Proficiency in financial modeling and Excel.",
+          "Attention to detail and accuracy.",
+          "Understanding of financial markets and instruments."
+        ],
+        "salary": "$85,000 - $120,000/year"
+      },
+      {
+        "company": "Ford Motor Company",
+        "position": "Mechanical Engineer",
+        "industry": "Automotive",
+        "responsibilities": [
+          "Design and develop automotive components and systems.",
+          "Oversee the testing and validation of designs.",
+          "Collaborate with manufacturing teams to ensure design feasibility.",
+          "Participate in the continuous improvement of design processes."
+        ],
+        "required_skills": [
+          "Proficiency in CAD software.",
+          "Strong understanding of mechanical design principles.",
+          "Experience with automotive systems and components.",
+          "Problem-solving skills."
+        ],
+        "salary": "$80,000 - $120,000/year"
+      },
+      {
+        "company": "eBay",
+        "position": "Data Analyst",
+        "industry": "E-commerce",
+        "responsibilities": [
+          "Analyze data to identify trends and insights.",
+          "Create reports and dashboards to support business decision-making.",
+          "Collaborate with cross-functional teams to improve business processes.",
+          "Support the development of data-driven strategies."
+        ],
+        "required_skills": [
+          "Strong analytical skills.",
+          "Proficiency in SQL and Excel.",
+          "Experience with data visualization tools (e.g., Tableau, Power BI).",
+          "Ability to work with large datasets."
+        ],
+        "salary": "$75,000 - $110,000/year"
+      },
+      {
+        "company": "Adobe",
+        "position": "UX Designer",
+        "industry": "Technology",
+        "responsibilities": [
+          "Design user interfaces for software applications.",
+          "Conduct user research to understand user needs and behaviors.",
+          "Create wireframes, prototypes, and mockups.",
+          "Collaborate with product teams to ensure design alignment."
+        ],
+        "required_skills": [
+          "Proficiency in design tools (e.g., Figma, Sketch).",
+          "Creativity and attention to detail.",
+          "Strong understanding of user-centered design principles.",
+          "Ability to work in a fast-paced environment."
+        ],
+        "salary": "$90,000 - $130,000/year"
+      },
+      {
+        "company": "PepsiCo",
+        "position": "Supply Chain Manager",
+        "industry": "Consumer Goods",
+        "responsibilities": [
+          "Oversee supply chain operations and logistics.",
+          "Optimize inventory levels and reduce costs.",
+          "Manage relationships with suppliers and vendors.",
+          "Implement supply chain improvements to increase efficiency."
+        ],
+        "required_skills": [
+          "Strong leadership and management skills.",
+          "Experience with supply chain and logistics.",
+          "Analytical and problem-solving abilities.",
+          "Ability to work under pressure and meet deadlines."
+        ],
+        "salary": "$80,000 - $120,000/year"
+      },
+      {
+        "company": "Intel",
+        "position": "Hardware Engineer",
+        "industry": "Technology",
+        "responsibilities": [
+          "Design and test hardware components and systems.",
+          "Collaborate with design and development teams.",
+          "Conduct research to improve hardware performance.",
+          "Participate in the entire product lifecycle from concept to production."
+        ],
+        "required_skills": [
+          "Proficiency in CAD and hardware design tools.",
+          "Strong understanding of electronic circuits and systems.",
+          "Experience with hardware testing and validation.",
+          "Ability to work on multiple projects simultaneously."
+        ],
+        "salary": "$90,000 - $130,000/year"
+      },
+      {
+        "company": "Johnson & Johnson",
+        "position": "Biomedical Engineer",
+        "industry": "Healthcare",
+        "responsibilities": [
+          "Design and test medical devices.",
+          "Support clinical trials and product development.",
+          "Collaborate with R&D teams to innovate new solutions.",
+          "Ensure compliance with regulatory standards."
+        ],
+        "required_skills": [
+          "Biomedical engineering knowledge.",
+          "Experience with CAD tools.",
+          "Strong research and analytical skills.",
+          "Understanding of medical device regulations."
+        ],
+        "salary": "$85,000 - $125,000/year"
+      },
+      {
+        "company": "Deloitte",
+        "position": "Business Consultant",
+        "industry": "Consulting",
+        "responsibilities": [
+          "Advise clients on business strategies.",
+          "Conduct market research and analysis.",
+          "Develop and implement business improvement plans.",
+          "Manage projects and collaborate with client teams."
+        ],
+        "required_skills": [
+          "Strong analytical and strategic thinking.",
+          "Excellent communication and presentation skills.",
+          "Project management experience.",
+          "Ability to work with cross-functional teams."
+        ],
+        "salary": "$75,000 - $115,000/year"
+      },
+      {
+        "company": "Salesforce",
+        "position": "Software Developer",
+        "industry": "Technology",
+        "responsibilities": [
+          "Develop software applications and solutions.",
+          "Troubleshoot and debug code.",
+          "Collaborate with cross-functional teams to define product requirements.",
+          "Participate in code reviews and ensure best practices."
+        ],
+        "required_skills": [
+          "Proficiency in programming languages (e.g., Java, Python).",
+          "Experience with software development lifecycle.",
+          "Strong problem-solving skills.",
+          "Ability to work in a collaborative environment."
+        ],
+        "salary": "$95,000 - $140,000/year"
+      },
+      {
+        "company": "Pfizer",
+        "position": "Pharmaceutical Sales Representative",
+        "industry": "Pharmaceuticals",
+        "responsibilities": [
+          "Promote pharmaceutical products to healthcare professionals.",
+          "Manage client relationships and build new ones.",
+          "Meet and exceed sales targets.",
+          "Stay informed about the latest industry developments."
+        ],
+        "required_skills": [
+          "Strong communication and interpersonal skills.",
+          "Sales experience, preferably in pharmaceuticals.",
+          "Understanding of pharmaceutical products and industry trends.",
+          "Ability to work independently and as part of a team."
+        ],
+        "salary": "$70,000 - $110,000/year"
+      },
+      {
+        "company": "Nike",
+        "position": "Brand Manager",
+        "industry": "Retail",
+        "responsibilities": [
+          "Develop brand strategies and marketing campaigns.",
+          "Analyze market trends and consumer behavior.",
+          "Manage brand positioning and identity.",
+          "Collaborate with creative and marketing teams."
+        ],
+        "required_skills": [
+          "Strong marketing and brand management skills.",
+          "Creativity and strategic thinking.",
+          "Excellent communication and leadership abilities.",
+          "Experience with consumer behavior analysis."
+        ],
+        "salary": "$85,000 - $130,000/year"
+      },
+      {
+        "company": "KPMG",
+        "position": "Tax Advisor",
+        "industry": "Finance",
+        "responsibilities": [
+          "Provide tax advisory services to clients.",
+          "Manage tax compliance and filing processes.",
+          "Conduct tax planning and optimization strategies.",
+          "Stay updated on tax laws and regulations."
+        ],
+        "required_skills": [
+          "Strong knowledge of tax laws and regulations.",
+          "Analytical skills and attention to detail.",
+          "Experience in tax advisory and planning.",
+          "Ability to communicate complex tax issues to clients."
+        ],
+        "salary": "$75,000 - $115,000/year"
+      },
+      {
+        "company": "L'Oréal",
+        "position": "Product Development Manager",
+        "industry": "Beauty",
+        "responsibilities": [
+          "Oversee product development processes.",
+          "Manage product testing and quality assurance.",
+          "Collaborate with marketing teams on product launches.",
+          "Analyze market trends and consumer feedback."
+        ],
+        "required_skills": [
+          "Knowledge of beauty industry trends and products.",
+          "Experience in product development and project management.",
+          "Strong communication and leadership skills.",
+          "Creativity and innovation in product design."
+        ],
+        "salary": "$80,000 - $120,000/year"
+      },
+      {
+        "company": "McKinsey & Company",
+        "position": "Strategy Consultant",
+        "industry": "Consulting",
+        "responsibilities": [
+          "Develop business strategies and recommendations.",
+          "Conduct market analysis and research.",
+          "Present findings and recommendations to clients.",
+          "Collaborate with cross-functional teams to implement strategies.",
+          "Manage client projects and ensure timely delivery."
+        ],
+        "required_skills": [
+          "Strategic thinking and analytical skills.",
+          "Excellent communication and presentation abilities.",
+          "Experience in project management.",
+          "Ability to work under pressure and meet deadlines."
+        ],
+        "salary": "$90,000 - $135,000/year"
+      },
+      {
+        "company": "BP",
+        "position": "Environmental Scientist",
+        "industry": "Energy",
+        "responsibilities": [
+          "Conduct environmental impact assessments.",
+          "Develop and implement sustainability initiatives.",
+          "Ensure compliance with environmental regulations.",
+          "Collaborate with engineering teams to reduce environmental footprint.",
+          "Prepare reports and presentations on environmental findings."
+        ],
+        "required_skills": [
+          "Strong knowledge of environmental science.",
+          "Experience with environmental regulations and compliance.",
+          "Analytical skills and attention to detail.",
+          "Ability to work independently and in teams."
+        ],
+        "salary": "$75,000 - $110,000/year"
+      },
+      {
+        "company": "Disney",
+        "position": "Entertainment Coordinator",
+        "industry": "Entertainment",
+        "responsibilities": [
+          "Coordinate entertainment productions and events.",
+          "Manage project timelines and budgets.",
+          "Collaborate with creative teams to ensure alignment with brand vision.",
+          "Liaise with external vendors and partners.",
+          "Ensure the successful execution of entertainment projects."
+        ],
+        "required_skills": [
+          "Strong project management skills.",
+          "Creativity and attention to detail.",
+          "Ability to work under pressure and meet tight deadlines.",
+          "Excellent communication and collaboration skills."
+        ],
+        "salary": "$70,000 - $105,000/year"
+      },
+      {
+        "company": "Ford Motor Company",
+        "position": "Automotive Engineer",
+        "industry": "Automotive",
+        "responsibilities": [
+          "Design and develop automotive systems and components.",
+          "Collaborate with cross-functional teams to ensure product quality.",
+          "Conduct testing and validation of designs.",
+          "Support the continuous improvement of automotive technologies.",
+          "Prepare technical documentation and reports."
+        ],
+        "required_skills": [
+          "Strong understanding of automotive engineering principles.",
+          "Proficiency in CAD software.",
+          "Experience with automotive testing and validation.",
+          "Problem-solving and analytical skills."
+        ],
+        "salary": "$80,000 - $120,000/year"
+      },
+      {
+        "company": "Google",
+        "position": "Data Scientist",
+        "industry": "Technology",
+        "responsibilities": [
+          "Analyze large datasets to extract meaningful insights.",
+          "Develop and implement machine learning models.",
+          "Collaborate with product teams to drive data-driven decisions.",
+          "Present findings and recommendations to stakeholders.",
+          "Continuously improve data processing and analysis techniques."
+        ],
+        "required_skills": [
+          "Proficiency in programming languages such as Python and R.",
+          "Strong understanding of machine learning and statistical analysis.",
+          "Experience with data visualization tools.",
+          "Ability to work with large, complex datasets."
+        ],
+        "salary": "$110,000 - $160,000/year"
+      },
+      {
+        "company": "Coca-Cola",
+        "position": "Operations Manager",
+        "industry": "Beverage",
+        "responsibilities": [
+          "Oversee daily operations to ensure efficiency and productivity.",
+          "Optimize production processes and reduce operational costs.",
+          "Manage and mentor teams to achieve operational goals.",
+          "Collaborate with supply chain and logistics teams.",
+          "Ensure compliance with safety and quality standards."
+        ],
+        "required_skills": [
+          "Strong leadership and management skills.",
+          "Experience in operations management, preferably in manufacturing.",
+          "Analytical and problem-solving abilities.",
+          "Ability to work under pressure and manage multiple priorities."
+        ],
+        "salary": "$85,000 - $130,000/year"
+      },
+      {
+        "company": "JP Morgan Chase",
+        "position": "Risk Analyst",
+        "industry": "Finance",
+        "responsibilities": [
+          "Identify and assess potential financial risks.",
+          "Analyze data to develop risk management strategies.",
+          "Monitor and report on risk exposures and mitigation efforts.",
+          "Collaborate with internal teams to implement risk controls.",
+          "Prepare risk assessment reports for senior management."
+        ],
+        "required_skills": [
+          "Strong analytical and quantitative skills.",
+          "Knowledge of financial markets and risk management practices.",
+          "Attention to detail and accuracy.",
+          "Ability to work in a fast-paced environment."
+        ],
+        "salary": "$75,000 - $115,000/year"
+      },
+      {
+        "company": "IBM",
+        "position": "Cybersecurity Analyst",
+        "industry": "Technology",
+        "responsibilities": [
+          "Monitor and analyze security systems for potential threats.",
+          "Detect and respond to security incidents in real-time.",
+          "Conduct vulnerability assessments and penetration testing.",
+          "Collaborate with IT teams to implement security controls.",
+          "Prepare reports on security incidents and resolutions."
+        ],
+        "required_skills": [
+          "Strong knowledge of cybersecurity principles and practices.",
+          "Experience with security tools and technologies.",
+          "Problem-solving and analytical abilities.",
+          "Ability to work in a high-pressure environment."
+        ],
+        "salary": "$85,000 - $120,000/year"
+      },
+      {
+        "company": "Cisco",
+        "position": "Network Engineer",
+        "industry": "Technology",
+        "responsibilities": [
+          "Design, implement, and maintain network systems.",
+          "Troubleshoot and resolve network issues.",
+          "Collaborate with IT teams to ensure network security and efficiency.",
+          "Monitor network performance and optimize for reliability.",
+          "Prepare and maintain network documentation."
+        ],
+        "required_skills": [
+          "Strong knowledge of networking principles and protocols.",
+          "Experience with Cisco technologies and network security.",
+          "Problem-solving and troubleshooting skills.",
+          "Ability to work independently and in teams."
+        ],
+        "salary": "$80,000 - $115,000/year"
+      },
+      {
+        "company": "Oracle",
+        "position": "Database Administrator",
+        "industry": "Technology",
+        "responsibilities": [
+          "Manage and maintain databases to ensure optimal performance.",
+          "Ensure data integrity and security across databases.",
+          "Perform regular backups and disaster recovery planning.",
+          "Optimize database performance and troubleshoot issues.",
+          "Collaborate with development teams to support database needs."
+        ],
+        "required_skills": [
+          "Proficiency in SQL and database management systems.",
+          "Strong understanding of database security and performance optimization.",
+          "Experience with Oracle database technologies.",
+          "Attention to detail and problem-solving abilities."
+        ],
+        "salary": "$85,000 - $120,000/year"
+      },
+      {
+        "company": "Dell Technologies",
+        "position": "Product Manager",
+        "industry": "Technology",
+        "responsibilities": [
+          "Define product strategy and roadmap.",
+          "Manage the product lifecycle from ideation to launch.",
+          "Collaborate with engineering, marketing, and sales teams.",
+          "Analyze market trends and customer feedback to improve products.",
+          "Ensure products meet business goals and customer needs."
+        ],
+        "required_skills": [
+          "Experience in product management and lifecycle management.",
+          "Strong communication and collaboration skills.",
+          "Strategic thinking and problem-solving abilities.",
+          "Ability to work in a fast-paced environment."
+        ],
+        "salary": "$90,000 - $130,000/year"
+      },
+      {
+        "company": "Amazon",
+        "position": "Software Development Engineer",
+        "industry": "Technology",
+        "responsibilities": [
+          "Design, develop, and deploy software solutions.",
+          "Collaborate with cross-functional teams to deliver high-quality products.",
+          "Write efficient and scalable code.",
+          "Troubleshoot and resolve software issues.",
+          "Participate in code reviews and continuous improvement processes."
+        ],
+        "required_skills": [
+          "Proficiency in programming languages such as Java, Python, or C++.",
+          "Experience with cloud computing and scalable systems.",
+          "Strong problem-solving and debugging skills.",
+          "Ability to work in an agile development environment."
+        ],
+        "salary": "$110,000 - $150,000/year"
+      },
+      {
+        "company": "Microsoft",
+        "position": "Software Engineer",
+        "industry": "Technology",
+        "responsibilities": [
+          "Develop and maintain software applications.",
+          "Collaborate with product teams to define technical requirements.",
+          "Write clean, maintainable, and scalable code.",
+          "Participate in code reviews and ensure code quality.",
+          "Contribute to the design and architecture of software systems."
+        ],
+        "required_skills": [
+          "Proficiency in C#, .NET, or other programming languages.",
+          "Experience with software development best practices.",
+          "Strong understanding of algorithms and data structures.",
+          "Ability to work in a collaborative and fast-paced environment."
+        ],
+        "salary": "$105,000 - $145,000/year"
+      },
+      {
+        "company": "Facebook (Meta)",
+        "position": "Front-End Engineer",
+        "industry": "Technology",
+        "responsibilities": [
+          "Develop user-facing features for web applications.",
+          "Collaborate with designers and back-end developers.",
+          "Ensure the technical feasibility of UI/UX designs.",
+          "Optimize applications for maximum speed and scalability.",
+          "Maintain and improve the codebase for long-term maintainability."
+        ],
+        "required_skills": [
+          "Proficiency in HTML, CSS, JavaScript, and front-end frameworks like React or Angular.",
+          "Experience with responsive and adaptive design.",
+          "Strong understanding of web development best practices.",
+          "Ability to work in a collaborative team environment."
+        ],
+        "salary": "$100,000 - $140,000/year"
+    }
+  ]
+}
