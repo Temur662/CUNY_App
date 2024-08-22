@@ -5,6 +5,7 @@ import { SafeAreaView } from 'react-native-safe-area-context'
 import { BlurView } from 'expo-blur'
 import Animated, { useAnimatedStyle, withTiming, useSharedValue, withRepeat } from 'react-native-reanimated'
 import { LinearGradient } from 'expo-linear-gradient';
+import { Button } from 'react-native-paper'
 
 const SignIn = () => {
   const { width } = Dimensions.get('screen') 
@@ -27,6 +28,9 @@ const SignIn = () => {
     >
         <SafeAreaView className='flex-1'>
         <Stack.Screen options={{ headerShown : false }}/>
+            <Link href={'/(auth)/test'}>
+                <Text>Test</Text>
+            </Link>
             <BlurView intensity={10} className='flex-1 flex-col bg-gray'>
                 <Image source={require('@/assets/images/CUNYname-logo.png')} style={{width : '90%', height : '25%', objectFit : 'contain', alignSelf : 'center'}}/>
                 <View className='w-[90%] self-center pt-[25%]'>
