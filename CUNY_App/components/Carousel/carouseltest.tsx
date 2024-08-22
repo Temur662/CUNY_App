@@ -12,9 +12,8 @@ import {
   Platform,
 } from 'react-native';
 const { width, height } = Dimensions.get('window');
-
+import {Tutors} from '@/assets/data/Tutors'
 import { LinearGradient } from 'expo-linear-gradient';
-
 const SPACING = 10;
 const ITEM_SIZE = Platform.OS === 'ios' ? width * 0.72 : width * 0.74;
 const EMPTY_ITEM_SIZE = (width - ITEM_SIZE) / 2;
@@ -26,12 +25,12 @@ const Loading = () => (
   </View>
 );
 
-const Backdrop = ({ tutors, scrollX }) => {
+const Backdrop = ({ tutors, scrollX } : any) => {
   return (
     <View style={{ height: BACKDROP_HEIGHT, width, position: 'absolute' }}>
       <FlatList
-        data={tutors.reverse()}
-        keyExtractor={(item) => item.key + '-backdrop'}
+        data={Tutors.reverse()}
+        keyExtractor={(item) => item + '-backdrop'}
         removeClippedSubviews={false}
         contentContainerStyle={{ width, height: BACKDROP_HEIGHT }}
         renderItem={({ item, index }) => {
@@ -78,18 +77,17 @@ const Backdrop = ({ tutors, scrollX }) => {
 );
 };
 
-export default function App() {
-const [movies, setMovies] = React.useState([]);
+export default function Carousel() {
 const scrollX = React.useRef(new Animated.Value(0)).current;
 
 return (
   <View style={styles.container}>
-    <Backdrop tutors={tutors} scrollX={scrollX} />
+   { /*<Backdrop tutors={Tutors[0]} scrollX={scrollX} /> */}
     <StatusBar hidden />
     <Animated.FlatList
       showsHorizontalScrollIndicator={false}
-      data={movies}
-      keyExtractor={(item) => item.key}
+      data={Tutors[0].tutors}
+      
       horizontal
       bounces={false}
       decelerationRate={Platform.OS === 'ios' ? 0 : 0.98}
@@ -103,7 +101,7 @@ return (
       )}
       scrollEventThrottle={16}
       renderItem={({ item, index }) => {
-        if (!item.poster) {
+        if (!item )  {
           return <View style={{ width: EMPTY_ITEM_SIZE }} />;
         }
 
@@ -120,7 +118,7 @@ return (
         });
      
         return (
-          <View style={{ width: ITEM_SIZE }}>
+          <View style={{ width: ITEM_SIZE, }}>
             <Animated.View
               style={{
                 marginHorizontal: SPACING,
@@ -129,17 +127,21 @@ return (
                 transform: [{ translateY }],
                 backgroundColor: 'white',
                 borderRadius: 34,
+                height : height / 2
               }}
             >
               <Image
-                source={{ uri: item.poster }}
+                source={require('@/assets/images/profile.png')}
                 style={styles.posterImage}
               />
+              <Text style={{ fontSize: 24 }} className='text-center'>
+                {item.classes_covered}
+              </Text>
               <Text style={{ fontSize: 24 }} numberOfLines={1}>
-                {item.title}
+                {item.name}
               </Text>
               <Text style={{ fontSize: 12 }} numberOfLines={3}>
-                {item.description}
+                {item.availability}
               </Text>
             </Animated.View>
           </View>
@@ -167,7 +169,7 @@ paragraph: {
 },
 posterImage: {
   width: '100%',
-  height: ITEM_SIZE * 1.2,
+  height: ITEM_SIZE / 2,
   resizeMode: 'cover',
   borderRadius: 24,
   margin: 0,
