@@ -13,6 +13,7 @@ export default function HomeScreen() {
         <Image
           source={require('@/assets/images/partial-react-logo.png')}
           style={styles.reactLogo}
+          
         />
       }>
       <ThemedView style={styles.titleContainer}>
