@@ -1,5 +1,5 @@
 import type { PropsWithChildren, ReactElement } from 'react';
-import { StyleSheet, useColorScheme } from 'react-native';
+import { ImageBackground, StyleSheet, useColorScheme } from 'react-native';
 import Animated, {
   interpolate,
   useAnimatedRef,
@@ -44,17 +44,23 @@ export default function ParallaxScrollView({
 
   return (
     <ThemedView style={styles.container}>
+      <ImageBackground
+      source={require('@/assets/images/blurbg.png')}
+      style={{ flex : 1 }}
+      imageStyle={{ height : '100%', width: '100%'}}
+    >
       <Animated.ScrollView ref={scrollRef} scrollEventThrottle={16}>
         <Animated.View
           style={[
             styles.header,
-            { backgroundColor: headerBackgroundColor[colorScheme] },
+            { backgroundColor: headerBackgroundColor[colorScheme], height : 200},
             headerAnimatedStyle,
           ]}>
           {headerImage}
         </Animated.View>
         <ThemedView style={styles.content}>{children}</ThemedView>
       </Animated.ScrollView>
+      </ImageBackground>
     </ThemedView>
   );
 }
@@ -71,6 +77,6 @@ const styles = StyleSheet.create({
     flex: 1,
     padding: 32,
     gap: 16,
-    overflow: 'hidden',
+    backgroundColor : 'rgba(0,0,0,0)'
   },
 });

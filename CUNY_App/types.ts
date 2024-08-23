@@ -21,3 +21,11 @@ export type Profile = {
     studentYear : string,
     careerChoice : string
 }
+
+export type Upcomings = {
+    upcomingType : string,
+    time : string,
+    speaker : string,
+    subject : string,
+
+}

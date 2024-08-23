@@ -17,7 +17,7 @@ import { LinearGradient } from 'expo-linear-gradient';
 const SPACING = 10;
 const ITEM_SIZE = Platform.OS === 'ios' ? width * 0.72 : width * 0.74;
 const EMPTY_ITEM_SIZE = (width - ITEM_SIZE) / 2;
-const BACKDROP_HEIGHT = height * 0.65;
+const BACKDROP_HEIGHT = height * 0.5;
 
 const Loading = () => (
   <View style={styles.loadingContainer}>
@@ -25,16 +25,16 @@ const Loading = () => (
   </View>
 );
 
-const Backdrop = ({ tutors, scrollX } : any) => {
+const Backdrop = ({ tutors, scrollX, tutorIndex } : any) => {
   return (
-    <View style={{ height: BACKDROP_HEIGHT, width, position: 'absolute' }}>
+    <View style={{ height: '100%', width, position: 'absolute' }} className='border'>
       <FlatList
-        data={Tutors.reverse()}
+        data={[1,2,3]}
         keyExtractor={(item) => item + '-backdrop'}
         removeClippedSubviews={false}
-        contentContainerStyle={{ width, height: BACKDROP_HEIGHT }}
+        contentContainerStyle={{ width, height: '100%'}}
         renderItem={({ item, index }) => {
-          if (!item.backdrop) {
+          if (!item) {
             return null;
           }
           const translateX = scrollX.interpolate({
@@ -53,10 +53,10 @@ const Backdrop = ({ tutors, scrollX } : any) => {
             }}
           >
             <Image
-              source={{ uri: item.backdrop }}
+              source={{ uri: Tutors[tutorIndex].backdrop }}
               style={{
                 width,
-                height: BACKDROP_HEIGHT,
+                height: '100%',
                 position: 'absolute',
               }}
             />
@@ -77,16 +77,16 @@ const Backdrop = ({ tutors, scrollX } : any) => {
 );
 };
 
-export default function Carousel() {
+export default function TutorCarousel({index}  : {index : number}) {
 const scrollX = React.useRef(new Animated.Value(0)).current;
 
 return (
   <View style={styles.container}>
-   { /*<Backdrop tutors={Tutors[0]} scrollX={scrollX} /> */}
+    <Backdrop  scrollX={scrollX} tutorIndex={index}/> 
     <StatusBar hidden />
     <Animated.FlatList
       showsHorizontalScrollIndicator={false}
-      data={Tutors[0].tutors}
+      data={Tutors[index].tutors}
       
       horizontal
       bounces={false}
@@ -113,12 +113,12 @@ return (
 
         const translateY = scrollX.interpolate({
           inputRange,
-          outputRange: [0, -50, 0],
+          outputRange: [10, -30, 10],
           extrapolate: 'clamp',
         });
      
         return (
-          <View style={{ width: ITEM_SIZE, }}>
+          <View style={{ width: ITEM_SIZE,  }} className='border'>
             <Animated.View
               style={{
                 marginHorizontal: SPACING,
@@ -141,8 +141,11 @@ return (
                 {item.name}
               </Text>
               <Text style={{ fontSize: 12 }} numberOfLines={3}>
-                {item.availability}
+                Availability : {item.availability}
               </Text>
+              <View className='flex-1 flex-row justify-evenly'>
+                <Text className='' numberOfLines={1} allowFontScaling adjustsFontSizeToFit>Location: {item.location}</Text>
+              </View>
             </Animated.View>
           </View>
         );
