@@ -6,23 +6,23 @@ export const Tutors = [
         {},
         {
           "name": "Mark Lee",
-          "classes_covered": "Calculus I, II, III",
-          "availability": "Monday, Wednesday, 12:00 PM - 4:00 PM",
-          "location": "Mathematics Department (5S), Room 219",
+          "classes_covered":[ "Calculus I","Calculus II", "Calculus III"],
+          "availability": ["Monday 12:00 PM - 4:00 PM", "Wednesday, 12:00 PM - 4:00 PM"],
+          "location": "5S Room 219",
           "contact": "mlee@csi.cuny.edu"
         },
         {
           "name": "Jenny Park",
-          "classes_covered": "Linear Algebra, Differential Equations",
-          "availability": "Tuesday, Thursday, 2:00 PM - 5:00 PM",
-          "location": "Mathematics Department (5S), Room 217",
+          "classes_covered": ["Linear Algebra", "Differential Equations"],
+          "availability": ["Tuesday 2:00 PM - 5:00 PM", "Thursday 2:00 PM - 5:00 PM"],
+          "location": "5S Room 217",
           "contact": "jpark@csi.cuny.edu"
         },
         {
           "name": "David Chen",
-          "classes_covered": "Precalculus, Calculus I",
-          "availability": "Friday, 10:00 AM - 2:00 PM",
-          "location": "Mathematics Department (5S), Room 220",
+          "classes_covered": ["Precalculus", "Calculus I"],
+          "availability": ["Friday, 10:00 AM - 2:00 PM"],
+          "location": "5S Room 220",
           "contact": "dchen@csi.cuny.edu"
         },
         {}
@@ -34,23 +34,23 @@ export const Tutors = [
       "tutors": [
         {
           "name": "Tina Gonzales",
-          "classes_covered": "Physics 101, 102, 203",
-          "availability": "Tuesday, Thursday, 1:00 PM - 5:00 PM",
-          "location": "Physics Department (6S), Room 118",
+          "classes_covered": ["Physics 101" ,"Physics 102", "Physics 203"],
+          "availability": ["Tuesday 1:00 PM - 5:00 PM", "Thursday 1:00 PM - 5:00 PM"],
+          "location": "6S Room 118",
           "contact": "tgonzales@csi.cuny.edu"
         },
         {
           "name": "Dr. Alan Thompson",
-          "classes_covered": "General Physics I, II",
-          "availability": "Monday, Friday, 10:00 AM - 1:00 PM",
-          "location": "Physics Department (6S), Room 110",
+          "classes_covered": ["General Physics I", "General Physics II"],
+          "availability": ["Monday 10:00 AM - 1:00 PM", "Friday, 10:00 AM - 1:00 PM"],
+          "location": "6S Room 110",
           "contact": "athompson@csi.cuny.edu"
         },
         {
           "name": "Lisa Morales",
-          "classes_covered": "Physics for Engineers, Electromagnetism",
-          "availability": "Wednesday, 11:00 AM - 3:00 PM",
-          "location": "Physics Department (6S), Room 115",
+          "classes_covered": ["Physics for Engineers", "Electromagnetism"],
+          "availability": ["Wednesday, 11:00 AM - 3:00 PM"],
+          "location": "6S Room 115",
           "contact": "lmorales@csi.cuny.edu"
         }
       ]
@@ -61,23 +61,23 @@ export const Tutors = [
       "tutors": [
         {
           "name": "Dr. Samuel Green",
-          "classes_covered": "General Chemistry, Organic Chemistry",
-          "availability": "Monday, Friday, 10:00 AM - 1:00 PM",
-          "location": "Chemistry Department (6S), Room 119",
+          "classes_covered": ["General Chemistry", "Organic Chemistry"],
+          "availability": ["Monday 10:00 AM - 1:00 PM", "Friday, 10:00 AM - 1:00 PM"],
+          "location": "6S Room 119",
           "contact": "sgreen@csi.cuny.edu"
         },
         {
           "name": "Anna Bell",
-          "classes_covered": "Organic Chemistry I, II",
-          "availability": "Tuesday, Thursday, 12:00 PM - 3:00 PM",
-          "location": "Chemistry Department (6S), Room 122",
+          "classes_covered": ["Organic Chemistry I", "Organic Chemistry II"],
+          "availability": ["Tuesday 12:00 PM - 3:00 PM", "Thursday, 12:00 PM - 3:00 PM"],
+          "location": "6S Room 122",
           "contact": "abell@csi.cuny.edu"
         },
         {
           "name": "Michael White",
-          "classes_covered": "Physical Chemistry, Biochemistry",
-          "availability": "Wednesday, Friday, 1:00 PM - 4:00 PM",
-          "location": "Chemistry Department (6S), Room 125",
+          "classes_covered": ["Physical Chemistry", "Biochemistry"],
+          "availability": ["Wednesday 1:00 PM - 4:00 PM","Friday, 1:00 PM - 4:00 PM"],
+          "location": "6S Room 125",
           "contact": "mwhite@csi.cuny.edu"
         }
       ]
@@ -88,22 +88,22 @@ export const Tutors = [
       "tutors": [
         {
           "name": "Daniel Carter",
-          "classes_covered": "Intro to Programming, Data Structures, Artificial Intelligence",
-          "availability": "Monday, Wednesday, 2:00 PM - 6:00 PM",
-          "location": "Computer Science Department (1P), Room 220",
+          "classes_covered": ["Intro to Programming", "Data Structures", "Artificial Intelligence"],
+          "availability": ["Monday 2:00 PM - 6:00 PM", "Wednesday, 2:00 PM - 6:00 PM"],
+          "location": "1P Room 220",
           "contact": "dcarter@csi.cuny.edu"
         },
         {
           "name": "Megan White",
-          "classes_covered": "Algorithms, Operating Systems, Object-Oriented Software Design",
-          "availability": "Tuesday, Thursday, 3:00 PM - 5:00 PM",
-          "location": "Computer Science Department (1P), Room 222",
+          "classes_covered": ["Algorithms", "Operating Systems", "Object-Oriented Software Design"],
+          "availability": ["Tuesday 3:00 PM - 5:00 PM"," Thursday, 3:00 PM - 5:00 PM"],
+          "location": "1P Room 222",
           "contact": "mwhite@csi.cuny.edu"
         },
         {
           "name": "John Kim",
-          "classes_covered": "Software Engineering, Artificial Intelligence, Computer Architecture",
-          "availability": "Friday, 12:00 PM - 4:00 PM",
+          "classes_covered": ["Software Engineering", "Artificial Intelligence", "Computer Architecture"],
+          "availability": ["Friday, 12:00 PM - 4:00 PM"],
           "location": "Computer Science Department (1P), Room 223",
           "contact": "jkim@csi.cuny.edu"
         }
@@ -115,23 +115,23 @@ export const Tutors = [
       "tutors": [
         {
           "name": "Dr. Jessica Brown",
-          "classes_covered": "General Biology, Anatomy & Physiology",
-          "availability": "Tuesday, Thursday, 1:00 PM - 5:00 PM",
-          "location": "Biology Department (6S), Room 209",
+          "classes_covered": ["General Biology", "General Anatomy & Physiology"],
+          "availability": ["Tuesday 1:00 PM - 5:00 PM", "Thursday, 1:00 PM - 5:00 PM"],
+          "location": "6S Room 209",
           "contact": "jbrown@csi.cuny.edu"
         },
         {
           "name": "Eric Miles",
-          "classes_covered": "Genetics, Molecular Biology",
-          "availability": "Monday, Wednesday, 12:00 PM - 4:00 PM",
+          "classes_covered": ["Genetics", "Molecular Biology"],
+          "availability": ["Monday 12:00 PM - 4:00 PM", "Wednesday, 12:00 PM - 4:00 PM"],
           "location": "Biology Department (6S), Room 213",
           "contact": "emiles@csi.cuny.edu"
         },
         {
           "name": "Samantha Lee",
-          "classes_covered": "Microbiology, Evolutionary Biology",
-          "availability": "Friday, 10:00 AM - 2:00 PM",
-          "location": "Biology Department (6S), Room 215",
+          "classes_covered": ["Microbiology", "Evolutionary Biology"],
+          "availability": ["Friday, 10:00 AM - 2:00 PM"],
+          "location": "6S Room 215",
           "contact": "slee@csi.cuny.edu"
         }
       ]
