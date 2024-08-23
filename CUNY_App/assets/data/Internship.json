@@ -2,6 +2,7 @@
     "internships": [
       {
         "company": "Google",
+        "pic": "https://cdn2.hubspot.net/hubfs/53/image8-2.jpg",
         "position": "Software Engineering Intern",
         "industry": "Technology",
         "responsibilities": "Develop and test software, collaborate with cross-functional teams, participate in design discussions.",
@@ -10,6 +11,7 @@
       },
       {
         "company": "Goldman Sachs",
+        "pic": "https://designtaxi.com/news/427005/Goldman-Sachs-New-Logo-Is-A-Risky-Design-Investment-In-Some-People-s-Eyes/",
         "position": "Investment Banking Intern",
         "industry": "Finance",
         "responsibilities": "Assist in financial modeling, research market trends, support client presentations.",
@@ -18,6 +20,7 @@
       },
       {
         "company": "Tesla",
+        "pic": "https://cdn.logojoy.com/wp-content/uploads/20240110154233/Tesla-wordmark-logo--600x319.png",
         "position": "Mechanical Engineering Intern",
         "industry": "Automotive",
         "responsibilities": "Assist in the design and development of automotive components, perform simulations and tests.",
@@ -26,6 +29,7 @@
       },
       {
         "company": "Amazon",
+        "pic": "https://www.hatchwise.com/wp-content/uploads/2022/08/Amazon-Logo-2000-present-1024x576.jpeg",
         "position": "Business Analyst Intern",
         "industry": "E-commerce",
         "responsibilities": "Analyze data to improve operations, create reports, collaborate with different departments.",
@@ -34,6 +38,7 @@
       },
       {
         "company": "Microsoft",
+        "pic": "https://blogs.microsoft.com/wp-content/uploads/prod/2012/08/8867.Microsoft_5F00_Logo_2D00_for_2D00_screen.jpg",
         "position": "UX Design Intern",
         "industry": "Technology",
         "responsibilities": "Assist in user research, create wireframes and prototypes, collaborate with design teams.",
@@ -42,6 +47,7 @@
       },
       {
         "company": "Procter & Gamble",
+        "pic": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTELnPDws43KqF3L2tExG2K6xOP8KBhSy9dVtSkihoyKYH3T4tTzp_zOBVuRsfkwOrbXxs&usqp=CAU",
         "position": "Marketing Intern",
         "industry": "Consumer Goods",
         "responsibilities": "Support marketing campaigns, conduct market research, analyze consumer behavior.",
@@ -50,6 +56,7 @@
       },
       {
         "company": "IBM",
+        "pic": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPBss61ZSzmBM75JqdYCVqsfqJ4JijX0mt9g&s",
         "position": "Data Science Intern",
         "industry": "Technology",
         "responsibilities": "Analyze large datasets, develop machine learning models, present insights to stakeholders.",
@@ -58,6 +65,7 @@
       },
       {
         "company": "Pfizer",
+        "pic": "https://www.tramatm.com/_next/image?url=https%3A%2F%2Ftrama-static.s3.eu-central-1.amazonaws.com%2Fimages%2Fhall-of-fame%2Flogos%2F116(2)-logo.png&w=3840&q=75",
         "position": "Biomedical Engineering Intern",
         "industry": "Pharmaceuticals",
         "responsibilities": "Assist in the development of medical devices, conduct research, support clinical trials.",
@@ -66,6 +74,7 @@
       },
       {
         "company": "Deloitte",
+        "pic": "https://arcticwolf.com/wp-content/uploads/2021/11/Pathfactory-Thumbnail-PR-Deloitte.jpg",
         "position": "Consulting Intern",
         "industry": "Consulting",
         "responsibilities": "Support client engagements, conduct market research, assist in strategy development.",
@@ -74,6 +83,7 @@
       },
       {
         "company": "Facebook (Meta)",
+        "pic": "https://www.logo.wine/a/logo/Facebook/Facebook-f_Logo-White-Dark-Background-Logo.wine.svg",
         "position": "Software Engineering Intern",
         "industry": "Technology",
         "responsibilities": "Develop and test new features, work on large-scale projects, collaborate with engineers.",
@@ -82,6 +92,7 @@
       },
       {
         "company": "Johnson & Johnson",
+        "pic": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTaQo1_emqPO7kRtuV_GcPsQJIY9D8gFx4SA&s",
         "position": "Supply Chain Intern",
         "industry": "Healthcare",
         "responsibilities": "Assist in supply chain planning, optimize inventory levels, support logistics operations.",
@@ -90,6 +101,7 @@
       },
       {
         "company": "Nike",
+        "pic": "https://static.vecteezy.com/system/resources/previews/010/994/412/original/nike-logo-black-with-name-clothes-design-icon-abstract-football-illustration-with-white-background-free-vector.jpg",
         "position": "Product Management Intern",
         "industry": "Retail",
         "responsibilities": "Assist in product development, conduct market research, support product launches.",
@@ -98,6 +110,7 @@
       },
       {
         "company": "Oracle",
+        "pic": "https://clouds.geant.org/wp-content/uploads/2022/02/oracle-logo-600x600-1.png",
         "position": "Cloud Engineering Intern",
         "industry": "Technology",
         "responsibilities": "Assist in cloud solutions development, troubleshoot issues, collaborate with cross-functional teams.",
@@ -106,6 +119,7 @@
       },
       {
         "company": "SpaceX",
+        "pic": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCJ52g-HadK-FalvdXwQCF47Vje56_tl5NEw&s",
         "position": "Aerospace Engineering Intern",
         "industry": "Aerospace",
         "responsibilities": "Support spacecraft design and testing, conduct simulations, assist in research.",
@@ -114,6 +128,7 @@
       },
       {
         "company": "Adobe",
+        "pic": "",
         "position": "Graphic Design Intern",
         "industry": "Technology",
         "responsibilities": "Create visual content, assist in design projects, collaborate with the marketing team.",
@@ -122,6 +137,7 @@
       },
       {
         "company": "Accenture",
+        "pic": "",
         "position": "Technology Consulting Intern",
         "industry": "Consulting",
         "responsibilities": "Support technology implementation projects, conduct market research, assist in client presentations.",
@@ -130,6 +146,7 @@
       },
       {
         "company": "Unilever",
+        "pic": "",
         "position": "Sustainability Intern",
         "industry": "Consumer Goods",
         "responsibilities": "Support sustainability projects, conduct environmental impact assessments, collaborate with teams.",
@@ -138,6 +155,7 @@
       },
       {
         "company": "General Electric (GE)",
+        "pic": "",
         "position": "Electrical Engineering Intern",
         "industry": "Energy",
         "responsibilities": "Assist in electrical system design, conduct tests, support research and development.",
@@ -146,6 +164,7 @@
       },
       {
         "company": "LinkedIn",
+        "pic": "",
         "position": "Marketing Analytics Intern",
         "industry": "Technology",
         "responsibilities": "Analyze marketing data, create reports, support marketing strategies.",
@@ -154,6 +173,7 @@
       },
       {
         "company": "KPMG",
+        "pic": "",
         "position": "Audit Intern",
         "industry": "Finance",
         "responsibilities": "Assist in audit planning, perform financial analysis, support audit teams.",
@@ -162,6 +182,7 @@
       },
       {
         "company": "Apple",
+        "pic": "https://www.kindpng.com/picc/m/376-3763230_adobe-logo-01-adobe-logo-png-white-transparent.png",
         "position": "Hardware Engineering Intern",
         "industry": "Technology",
         "responsibilities": "Assist in hardware design and testing, collaborate with engineering teams, conduct research.",
@@ -170,6 +191,7 @@
       },
       {
         "company": "PepsiCo",
+        "pic": "https://c8.alamy.com/comp/2MMAG7X/pepsico-white-background-logo-brand-name-2MMAG7X.jpg",
         "position": "Supply Chain Intern",
         "industry": "Consumer Goods",
         "responsibilities": "Support supply chain operations, optimize logistics, conduct data analysis.",
@@ -178,6 +200,7 @@
       },
       {
         "company": "McKinsey & Company",
+        "pic": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvPRUNXTmLcfFEV3zqwKwjpfHZ8CyVI3oOCg-791Rr2nuA2g8BxE9FLMGSQRaMC-Fo3OU&usqp=CAU",
         "position": "Business Analyst Intern",
         "industry": "Consulting",
         "responsibilities": "Support client engagements, perform market research, assist in strategy development.",
@@ -186,6 +209,7 @@
       },
       {
         "company": "BP",
+        "pic": "https://tirauinfo.co.nz/wp-content/uploads/2017/02/bp-logo-white-background-f5-e1499913620824.jpg",
         "position": "Environmental Science Intern",
         "industry": "Energy",
         "responsibilities": "Assist in environmental impact assessments, support sustainability projects, conduct research.",
@@ -194,6 +218,7 @@
       },
       {
         "company": "Netflix",
+        "pic": "https://images.ctfassets.net/y2ske730sjqp/1aONibCke6niZhgPxuiilC/2c401b05a07288746ddf3bd3943fbc76/BrandAssets_Logos_01-Wordmark.jpg?w=940",
         "position": "Content Production Intern",
         "industry": "Entertainment",
         "responsibilities": "Assist in content development, support production teams, collaborate on creative projects.",
@@ -202,6 +227,7 @@
        },
        {
         "company": "Visa",
+        "pic": "https://thumbs.dreamstime.com/b/logo-white-background-editorial-illustrative-jpeg-illustration-download-visa-logo-white-background-210443965.jpg",
         "position": "Data Analytics Intern",
         "industry": "Finance",
         "responsibilities": "Analyze transaction data, create reports, collaborate with data scientists to improve financial models.",
@@ -210,6 +236,7 @@
        },
           {
         "company": "Twitter",
+        "pic": "https://static.vecteezy.com/system/resources/previews/021/495/987/non_2x/twitter-social-media-logo-icon-free-png.png",
         "position": "Software Engineering Intern",
         "industry": "Technology",
         "responsibilities": "Develop and optimize microservices, collaborate with product teams, participate in code reviews.",
@@ -218,6 +245,7 @@
           },
           {
         "company": "Spotify",
+        "pic": "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/12c6f684-d447-4457-84fa-12033cfd581e/d9z3sj0-a4e72d7d-2a65-4fe5-8a76-ff79ce67ace4.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzEyYzZmNjg0LWQ0NDctNDQ1Ny04NGZhLTEyMDMzY2ZkNTgxZVwvZDl6M3NqMC1hNGU3MmQ3ZC0yYTY1LTRmZTUtOGE3Ni1mZjc5Y2U2N2FjZTQuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.NFecQloJhSvOgS-LqTowh8fn9S6tSkXnU1nVo1Oev6o",
         "position": "User Experience Research Intern",
         "industry": "Technology",
         "responsibilities": "Conduct user research, analyze user feedback, support product development with user insights.",
@@ -226,6 +254,7 @@
           },
           {
         "company": "Rivian",
+        "pic": "https://www.rivianforums.com/forum/attachments/rivianlogo-jpg.47/",
         "position": "Electrical Engineering Intern",
         "industry": "Automotive",
         "responsibilities": "Assist in the design of electrical systems, perform testing and validation, support product development.",

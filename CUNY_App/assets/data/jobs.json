@@ -2,6 +2,7 @@
     "jobs": [
       {
         "company": "Apple",
+        "pic": "",
         "position": "Software Engineer",
         "industry": "Technology",
         "responsibilities": [
@@ -21,6 +22,7 @@
       },
       {
         "company": "Morgan Stanley",
+        "pic": "",
         "position": "Financial Analyst",
         "industry": "Finance",
         "responsibilities": [
@@ -39,6 +41,7 @@
       },
       {
         "company": "Ford Motor Company",
+        "pic": "",
         "position": "Mechanical Engineer",
         "industry": "Automotive",
         "responsibilities": [
@@ -57,6 +60,7 @@
       },
       {
         "company": "eBay",
+        "pic": "",
         "position": "Data Analyst",
         "industry": "E-commerce",
         "responsibilities": [
@@ -75,6 +79,7 @@
       },
       {
         "company": "Adobe",
+        "pic": "",
         "position": "UX Designer",
         "industry": "Technology",
         "responsibilities": [
@@ -93,6 +98,7 @@
       },
       {
         "company": "PepsiCo",
+        "pic": "",
         "position": "Supply Chain Manager",
         "industry": "Consumer Goods",
         "responsibilities": [
@@ -111,6 +117,7 @@
       },
       {
         "company": "Intel",
+        "pic": "",
         "position": "Hardware Engineer",
         "industry": "Technology",
         "responsibilities": [
@@ -129,6 +136,7 @@
       },
       {
         "company": "Johnson & Johnson",
+        "pic": "",
         "position": "Biomedical Engineer",
         "industry": "Healthcare",
         "responsibilities": [
@@ -147,6 +155,7 @@
       },
       {
         "company": "Deloitte",
+        "pic": "",
         "position": "Business Consultant",
         "industry": "Consulting",
         "responsibilities": [
@@ -165,6 +174,7 @@
       },
       {
         "company": "Salesforce",
+        "pic": "",
         "position": "Software Developer",
         "industry": "Technology",
         "responsibilities": [
@@ -183,6 +193,7 @@
       },
       {
         "company": "Pfizer",
+        "pic": "",
         "position": "Pharmaceutical Sales Representative",
         "industry": "Pharmaceuticals",
         "responsibilities": [
@@ -201,6 +212,7 @@
       },
       {
         "company": "Nike",
+        "pic": "",
         "position": "Brand Manager",
         "industry": "Retail",
         "responsibilities": [
@@ -219,6 +231,7 @@
       },
       {
         "company": "KPMG",
+        "pic": "",
         "position": "Tax Advisor",
         "industry": "Finance",
         "responsibilities": [
@@ -237,6 +250,7 @@
       },
       {
         "company": "L'Oréal",
+        "pic": "",
         "position": "Product Development Manager",
         "industry": "Beauty",
         "responsibilities": [
@@ -255,6 +269,7 @@
       },
       {
         "company": "McKinsey & Company",
+        "pic": "",
         "position": "Strategy Consultant",
         "industry": "Consulting",
         "responsibilities": [
@@ -274,6 +289,7 @@
       },
       {
         "company": "BP",
+        "pic": "",
         "position": "Environmental Scientist",
         "industry": "Energy",
         "responsibilities": [
@@ -293,6 +309,7 @@
       },
       {
         "company": "Disney",
+        "pic": "",
         "position": "Entertainment Coordinator",
         "industry": "Entertainment",
         "responsibilities": [
@@ -312,6 +329,7 @@
       },
       {
         "company": "Ford Motor Company",
+        "pic": "",
         "position": "Automotive Engineer",
         "industry": "Automotive",
         "responsibilities": [
@@ -331,6 +349,7 @@
       },
       {
         "company": "Google",
+        "pic": "",
         "position": "Data Scientist",
         "industry": "Technology",
         "responsibilities": [
@@ -350,6 +369,7 @@
       },
       {
         "company": "Coca-Cola",
+        "pic": "",
         "position": "Operations Manager",
         "industry": "Beverage",
         "responsibilities": [
@@ -369,6 +389,7 @@
       },
       {
         "company": "JP Morgan Chase",
+        "pic": "",
         "position": "Risk Analyst",
         "industry": "Finance",
         "responsibilities": [
@@ -388,6 +409,7 @@
       },
       {
         "company": "IBM",
+        "pic": "",
         "position": "Cybersecurity Analyst",
         "industry": "Technology",
         "responsibilities": [
@@ -407,6 +429,7 @@
       },
       {
         "company": "Cisco",
+        "pic": "",
         "position": "Network Engineer",
         "industry": "Technology",
         "responsibilities": [
@@ -426,6 +449,7 @@
       },
       {
         "company": "Oracle",
+        "pic": "",
         "position": "Database Administrator",
         "industry": "Technology",
         "responsibilities": [
@@ -445,6 +469,7 @@
       },
       {
         "company": "Dell Technologies",
+        "pic": "",
         "position": "Product Manager",
         "industry": "Technology",
         "responsibilities": [
@@ -464,6 +489,7 @@
       },
       {
         "company": "Amazon",
+        "pic": "",
         "position": "Software Development Engineer",
         "industry": "Technology",
         "responsibilities": [
@@ -483,6 +509,7 @@
       },
       {
         "company": "Microsoft",
+        "pic": "",
         "position": "Software Engineer",
         "industry": "Technology",
         "responsibilities": [
@@ -502,6 +529,7 @@
       },
       {
         "company": "Facebook (Meta)",
+        "pic": "",
         "position": "Front-End Engineer",
         "industry": "Technology",
         "responsibilities": [

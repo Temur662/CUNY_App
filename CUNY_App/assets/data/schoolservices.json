@@ -2,6 +2,7 @@
     "Academic_Advisors": [
       {
         "name": "Dr. Emily Richardson",
+        "pic": "",
         "department": "Center for Advising and Academic Success (CAAS)",
         "availability": "Monday - Friday, 9:00 AM - 4:30 PM",
         "location": "South Administration Building (1A), Room 101",
@@ -9,6 +10,7 @@
       },
       {
         "name": "Prof. James Cooper",
+        "pic": "",
         "department": "Pre-Health Advising",
         "availability": "Tuesday & Thursday, 1:00 PM - 3:00 PM",
         "location": "South Administration Building (1A), Room 112",
@@ -16,6 +18,7 @@
       },
       {
         "name": "Dr. Sarah Johnson",
+        "pic": "",
         "department": "Engineering and Environmental Science Advising",
         "availability": "Wednesday & Friday, 11:00 AM - 2:00 PM",
         "location": "North Academic Center (2N), Room 216",
@@ -23,6 +26,7 @@
       },
       {
         "name": "Dr. Peter Lee",
+        "pic": "",
         "department": "Humanities & Social Sciences Advising",
         "availability": "Monday, Wednesday, Friday 10:00 AM - 2:00 PM",
         "location": "South Administration Building (1A), Room 205",
@@ -30,6 +34,7 @@
       },
       {
         "name": "Ms. Laura Martinez",
+        "pic": "",
         "department": "Business & Economics Advising",
         "availability": "Monday - Thursday, 9:00 AM - 1:00 PM",
         "location": "North Academic Center (2N), Room 227",
@@ -42,6 +47,7 @@
         "tutors": [
           {
             "name": "Mark Lee",
+        "pic": "",
             "classes_covered": "Calculus I, II, III",
             "availability": "Monday, Wednesday, 12:00 PM - 4:00 PM",
             "location": "Mathematics Department (5S), Room 219",
@@ -49,6 +55,7 @@
           },
           {
             "name": "Jenny Park",
+        "pic": "",
             "classes_covered": "Linear Algebra, Differential Equations",
             "availability": "Tuesday, Thursday, 2:00 PM - 5:00 PM",
             "location": "Mathematics Department (5S), Room 217",
@@ -56,6 +63,7 @@
           },
           {
             "name": "David Chen",
+        "pic": "",
             "classes_covered": "Precalculus, Calculus I",
             "availability": "Friday, 10:00 AM - 2:00 PM",
             "location": "Mathematics Department (5S), Room 220",
@@ -68,6 +76,7 @@
         "tutors": [
           {
             "name": "Tina Gonzales",
+        "pic": "",
             "classes_covered": "Physics 101, 102, 203",
             "availability": "Tuesday, Thursday, 1:00 PM - 5:00 PM",
             "location": "Physics Department (6S), Room 118",
@@ -75,6 +84,7 @@
           },
           {
             "name": "Dr. Alan Thompson",
+        "pic": "",
             "classes_covered": "General Physics I, II",
             "availability": "Monday, Friday, 10:00 AM - 1:00 PM",
             "location": "Physics Department (6S), Room 110",
@@ -82,6 +92,7 @@
           },
           {
             "name": "Lisa Morales",
+        "pic": "",
             "classes_covered": "Physics for Engineers, Electromagnetism",
             "availability": "Wednesday, 11:00 AM - 3:00 PM",
             "location": "Physics Department (6S), Room 115",
@@ -94,6 +105,7 @@
         "tutors": [
           {
             "name": "Dr. Samuel Green",
+        "pic": "",
             "classes_covered": "General Chemistry, Organic Chemistry",
             "availability": "Monday, Friday, 10:00 AM - 1:00 PM",
             "location": "Chemistry Department (6S), Room 119",
@@ -101,6 +113,7 @@
           },
           {
             "name": "Anna Bell",
+        "pic": "",
             "classes_covered": "Organic Chemistry I, II",
             "availability": "Tuesday, Thursday, 12:00 PM - 3:00 PM",
             "location": "Chemistry Department (6S), Room 122",
@@ -108,6 +121,7 @@
           },
           {
             "name": "Michael White",
+        "pic": "",
             "classes_covered": "Physical Chemistry, Biochemistry",
             "availability": "Wednesday, Friday, 1:00 PM - 4:00 PM",
             "location": "Chemistry Department (6S), Room 125",
@@ -120,6 +134,7 @@
         "tutors": [
           {
             "name": "Daniel Carter",
+        "pic": "",
             "classes_covered": "Intro to Programming, Data Structures, Artificial Intelligence",
             "availability": "Monday, Wednesday, 2:00 PM - 6:00 PM",
             "location": "Computer Science Department (1P), Room 220",
@@ -127,6 +142,7 @@
           },
           {
             "name": "Megan White",
+        "pic": "",
             "classes_covered": "Algorithms, Operating Systems, Object-Oriented Software Design",
             "availability": "Tuesday, Thursday, 3:00 PM - 5:00 PM",
             "location": "Computer Science Department (1P), Room 222",
@@ -134,6 +150,7 @@
           },
           {
             "name": "John Kim",
+        "pic": "",
             "classes_covered": "Software Engineering, Artificial Intelligence, Computer Architecture",
             "availability": "Friday, 12:00 PM - 4:00 PM",
             "location": "Computer Science Department (1P), Room 223",
@@ -146,6 +163,7 @@
         "tutors": [
           {
             "name": "Dr. Jessica Brown",
+        "pic": "",
             "classes_covered": "General Biology, Anatomy & Physiology",
             "availability": "Tuesday, Thursday, 1:00 PM - 5:00 PM",
             "location": "Biology Department (6S), Room 209",
@@ -153,6 +171,7 @@
           },
           {
             "name": "Eric Miles",
+        "pic": "",
             "classes_covered": "Genetics, Molecular Biology",
             "availability": "Monday, Wednesday, 12:00 PM - 4:00 PM",
             "location": "Biology Department (6S), Room 213",
@@ -160,6 +179,7 @@
           },
           {
             "name": "Samantha Lee",
+        "pic": "",
             "classes_covered": "Microbiology, Evolutionary Biology",
             "availability": "Friday, 10:00 AM - 2:00 PM",
             "location": "Biology Department (6S), Room 215",
@@ -171,6 +191,7 @@
     "Counselors": [
       {
         "name": "Dr. Maria Lopez",
+        "pic": "",
         "department": "Counseling Center",
         "availability": "Monday - Thursday, 9:00 AM - 5:00 PM",
         "location": "North Administration Building (1A), Room 109",
@@ -178,6 +199,7 @@
       },
       {
         "name": "John Smith",
+        "pic": "",
         "department": "Career Services",
         "availability": "Tuesday & Thursday, 10:00 AM - 3:00 PM",
         "location": "North Administration Building (1A), Room 104",
@@ -185,6 +207,7 @@
       },
       {
         "name": "Dr. Angela Brown",
+        "pic": "",
         "department": "Wellness Center",
         "availability": "Wednesday & Friday, 12:00 PM - 6:00 PM",
         "location": "Student Center (1C), Room 225",
@@ -192,6 +215,7 @@
       },
       {
         "name": "Ms. Linda Parker",
+        "pic": "",
         "department": "Academic Counseling",
         "availability": "Monday - Friday, 10:00 AM - 4:00 PM",
         "location": "South Administration Building (1A), Room 210",
@@ -199,6 +223,7 @@
       },
       {
         "name": "Dr. James Wilson",
+        "pic": "",
         "department": "Financial Aid Counseling",
         "availability": "Tuesday, Thursday, 9:00 AM - 3:00 PM",
         "location": "South Administration Building (1A), Room 105",
@@ -208,6 +233,7 @@
     "Financial_Aid_Office": [
       {
         "name": "Amanda White",
+        "pic": "",
         "department": "Financial Aid Office",
         "availability": "Monday - Friday, 9:00 AM - 5:00 PM",
         "location": "North Administration Building (1A), Room 104",
@@ -215,6 +241,7 @@
       },
       {
         "name": "Peter Green",
+        "pic": "",
         "department": "Financial Aid Office",
         "availability": "Tuesday & Thursday, 11:00 AM - 4:00 PM",
         "location": "North Administration Building (1A), Room 105",
@@ -222,6 +249,7 @@
       },
       {
         "name": "Laura Kingsley",
+        "pic": "",
         "department": "Financial Aid Office",
         "availability": "Monday, Wednesday, Friday, 10:00 AM - 2:00 PM",
         "location": "North Administration Building (1A), Room 106",
@@ -229,6 +257,7 @@
       },
       {
         "name": "James Wong",
+        "pic": "",
         "department": "Financial Aid Office",
         "availability": "Monday - Thursday, 9:00 AM - 4:00 PM",
         "location": "North Administration Building (1A), Room 107",
@@ -236,6 +265,7 @@
       },
       {
         "name": "Ellen Harris",
+        "pic": "",
         "department": "Financial Aid Office",
         "availability": "Monday - Friday, 8:30 AM - 5:30 PM",
         "location": "North Administration Building (1A), Room 108",
@@ -245,6 +275,7 @@
     "Other_Offices": [
       {
         "name": "Registrar’s Office",
+        "pic": "",
         "location": "North Administration Building (1A), Room 201",
         "hours": "Monday - Friday, 9:00 AM - 5:00 PM",
         "contact": "registrar@csi.cuny.edu",
@@ -252,6 +283,7 @@
       },
       {
         "name": "Student Life Office",
+        "pic": "",
         "location": "North Administration Building (1A), Room 206",
         "hours": "Monday - Friday, 10:00 AM - 6:00 PM",
         "contact": "studentlife@csi.cuny.edu",
@@ -259,6 +291,7 @@
       },
       {
         "name": "International Students Office",
+        "pic": "",
         "location": "North Administration Building (1A), Room 207",
         "hours": "Monday - Thursday, 9:00 AM - 4:00 PM",
         "contact": "intlstudents@csi.cuny.edu",
@@ -266,6 +299,7 @@
       },
       {
         "name": "Disability Services Office",
+        "pic": "",
         "location": "North Administration Building (1A), Room 218",
         "hours": "Monday - Friday, 9:00 AM - 5:00 PM",
         "contact": "disabilityservices@csi.cuny.edu",
@@ -273,6 +307,7 @@
       },
       {
         "name": "Veterans Affairs Office",
+        "pic": "",
         "location": "North Administration Building (1A), Room 212",
         "hours": "Monday - Friday, 10:00 AM - 4:00 PM",
         "contact": "veterans@csi.cuny.edu",
@@ -280,6 +315,7 @@
       },
       {
         "name": "Career and Professional Development Institute",
+        "pic": "",
         "location": "North Administration Building (1A), Room 116",
         "hours": "Monday - Thursday, 9:00 AM - 6:00 PM, Friday 9:00 AM - 5:00 PM",
         "contact": "cpdi@csi.cuny.edu",
@@ -287,6 +323,7 @@
       },
       {
         "name": "Writing Center",
+        "pic": "",
         "location": "North Academic Center (2N), Room 220",
         "hours": "Monday - Friday, 10:00 AM - 5:00 PM",
         "contact": "writingcenter@csi.cuny.edu",
@@ -294,6 +331,7 @@
       },
       {
         "name": "Student Wellness and Counseling Center",
+        "pic": "",
         "location": "North Administration Building (1A), Room 1222",
         "hours": "Monday - Friday, 9:00 AM - 5:00 PM",
         "contact": "wellness@csi.cuny.edu",
@@ -303,6 +341,7 @@
     "Additional_Tutors_and_Resources_at_CSI": [
       {
         "name": "Math Resource Center",
+        "pic": "",
         "location": "South Administration Building (1A), Room 112",
         "hours": "Monday - Thursday, 9:00 AM - 5:00 PM; Friday 9:00 AM - 3:00 PM",
         "contact": "mathresource@csi.cuny.edu",
@@ -310,6 +349,7 @@
       },
       {
         "name": "Computer Science Resource Center",
+        "pic": "",
         "location": "Computer Science Department (1P), Room 223",
         "hours": "Monday - Friday, 10:00 AM - 5:00 PM",
         "contact": "csresource@csi.cuny.edu",
@@ -317,6 +357,7 @@
       },
       {
         "name": "Physics Resource Center",
+        "pic": "",
         "location": "Physics Department (6S), Room 110",
         "hours": "Monday - Friday, 9:00 AM - 5:00 PM",
         "contact": "physicsresource@csi.cuny.edu",
@@ -326,6 +367,7 @@
     "Counseling_and_Additional_Support": [
       {
         "name": "Dr. Maria Lopez",
+        "pic": "",
         "department": "Counseling Center",
         "availability": "Monday - Thursday, 9:00 AM - 5:00 PM",
         "location": "North Administration Building (1A), Room 109",
@@ -333,6 +375,7 @@
       },
       {
         "name": "John Smith",
+        "pic": "",
         "department": "Career Services",
         "availability": "Tuesday & Thursday, 10:00 AM - 3:00 PM",
         "location": "North Administration Building (1A), Room 104",
@@ -340,6 +383,7 @@
       },
       {
         "name": "Dr. Angela Brown",
+        "pic": "",
         "department": "Wellness Center",
         "availability": "Wednesday & Friday, 12:00 PM - 6:00 PM",
         "location": "Student Center (1C), Room 225",
@@ -351,18 +395,21 @@
       "key_resources": {
         "Program_Director": {
           "name": "Dr. Lisa French",
+        "pic": "",
           "location": "Building 2A, Room 205",
           "availability": "Monday - Friday, 9:00 AM - 5:00 PM",
           "contact": "lisa.french@csi.cuny.edu"
         },
         "Academic_Advisor": {
           "name": "Emily Rivera",
+        "pic": "",
           "location": "Building 2A, Room 207",
           "availability": "Monday - Thursday, 9:00 AM - 5:00 PM",
           "contact": "emily.rivera@csi.cuny.edu"
         },
         "Career_Counselor": {
           "name": "John Evans",
+        "pic": "",
           "location": "Building 2A, Room 210",
           "availability": "Tuesday & Thursday, 11:00 AM - 4:00 PM",
           "contact": "john.evans@csi.cuny.edu"
@@ -381,18 +428,21 @@
         "key_resources": {
           "Program_Director": {
             "name": "Dr. Mark Thompson",
+        "pic": "",
             "location": "Building 1A, Room 312",
             "availability": "Monday - Friday, 9:00 AM - 5:00 PM",
             "contact": "mark.thompson@csi.cuny.edu"
           },
           "Academic_Advisor": {
             "name": "Sarah Jackson",
+        "pic": "",
             "location": "Building 1A, Room 315",
             "availability": "Monday - Thursday, 10:00 AM - 4:00 PM",
             "contact": "sarah.jackson@csi.cuny.edu"
           },
           "Financial_Aid_Counselor": {
             "name": "Laura Harris",
+        "pic": "",
             "location": "Building 1A, Room 317",
             "availability": "Tuesday & Thursday, 9:00 AM - 3:00 PM",
             "contact": "laura.harris@csi.cuny.edu"
@@ -411,18 +461,21 @@
         "key_resources": {
           "Program_Director": {
             "name": "Dr. Natalie Green",
+        "pic": "",
             "location": "Building 2N, Room 103",
             "availability": "Monday - Friday, 9:00 AM - 5:00 PM",
             "contact": "natalie.green@csi.cuny.edu"
           },
           "Academic_Advisor": {
             "name": "Michael Brown",
+        "pic": "",
             "location": "Building 2N, Room 105",
             "availability": "Monday - Thursday, 10:00 AM - 5:00 PM",
             "contact": "michael.brown@csi.cuny.edu"
           },
           "Career_Services_Advisor": {
             "name": "David Carter",
+        "pic": "",
             "location": "Building 2N, Room 108",
             "availability": "Tuesday & Thursday, 12:00 PM - 4:00 PM",
             "contact": "david.carter@csi.cuny.edu"
@@ -441,18 +494,21 @@
         "key_resources": {
           "Program_Coordinator": {
             "name": "James Wright",
+        "pic": "",
             "location": "Financial Aid Office, North Administration Building (1A), Room 110",
             "availability": "Monday - Friday, 9:00 AM - 5:00 PM",
             "contact": "james.wright@csi.cuny.edu"
           },
           "Job_Placement_Officer": {
             "name": "Rachel Davis",
+        "pic": "",
             "location": "Financial Aid Office, North Administration Building (1A), Room 115",
             "availability": "Monday - Thursday, 10:00 AM - 4:00 PM",
             "contact": "rachel.davis@csi.cuny.edu"
           },
           "Student_Payroll_Coordinator": {
             "name": "Linda Gomez",
+        "pic": "",
             "location": "Financial Aid Office, North Administration Building (1A), Room 120",
             "availability": "Tuesday & Thursday, 9:00 AM - 3:00 PM",
             "contact": "linda.gomez@csi.cuny.edu"
