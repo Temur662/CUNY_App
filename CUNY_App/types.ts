@@ -24,8 +24,9 @@ export type Profile = {
 
 export type Upcomings = {
     upcomingType : string,
-    time : string,
+    time : string[],
     speaker : string,
     subject : string,
-
+    pic : string,
+    
 }

@@ -12,7 +12,8 @@ import {
   Platform,
 } from 'react-native';
 const { width, height } = Dimensions.get('window');
-import {Tutors} from '@/assets/data/Tutors'
+import { Academic } from '@/assets/data/SchoolResources';
+import { Counslers } from '@/assets/data/SchoolResources';
 import { LinearGradient } from 'expo-linear-gradient';
 import { Button } from 'react-native-paper';
 import { Upcomings } from '@/types';
@@ -56,7 +57,7 @@ const Backdrop = ({ tutors, scrollX, tutorIndex } : any) => {
             }}
           >
             <Image
-              source={{ uri: Tutors[tutorIndex].backdrop }}
+              source={{ uri: '' }}
               style={{
                 width,
                 height: '100%',
@@ -80,26 +81,38 @@ const Backdrop = ({ tutors, scrollX, tutorIndex } : any) => {
 );
 };
 
-export default function TutorCarousel({index}  : {index : number}) {
+export default function SchoolResourcesCaoursel({advisment}  : {advisment : string}) {
   const { onSetUpComings } = useUpcoming()
   const scrollX = React.useRef(new Animated.Value(0)).current;
-  const onSelect = (tutor : number) => {
-    const newUpcoming : Upcomings = {
-      upcomingType : 'Tutoring',
-      pic : Tutors[index].tutors[tutor].pic,
-      time : Tutors[index].tutors[tutor].availability!,
-      speaker : Tutors[index].tutors[tutor].name!,
-      subject : Tutors[index].subject
+  const onSelect = (advisor : number) => {
+    if( advisment == 'Academic') {
+        const newUpcoming : Upcomings = {
+            upcomingType : 'Academic Advisment',
+            pic : Academic[advisor].pic,
+            time : [Academic[advisor].availability!],
+            speaker : Academic[advisor].name!,
+            subject : Academic[advisor].department!
+          }
+          onSetUpComings(newUpcoming)
+    }else{
+        const newUpcoming : Upcomings = {
+            upcomingType : 'Academic Advisment',
+            pic : Counslers[advisor].pic,
+            time : [Counslers[advisor].availability!],
+            speaker : Counslers[advisor].name!,
+            subject : Counslers[advisor].department!
+          }
+          onSetUpComings(newUpcoming)
     }
-    onSetUpComings(newUpcoming)
+   
   }
   return (
     <View style={styles.container}>
-      <Backdrop  scrollX={scrollX} tutorIndex={index}/> 
+      <Backdrop  scrollX={scrollX} tutorIndex={0}/> 
       <StatusBar hidden />
       <Animated.FlatList
         showsHorizontalScrollIndicator={false}
-        data={Tutors[index].tutors}
+        data={advisment == 'Academic' ? Academic : Counslers}
         
         horizontal
         bounces={false}
@@ -144,17 +157,11 @@ export default function TutorCarousel({index}  : {index : number}) {
                 }}
               >
                 <Image
-                  source={{uri : item.pic }}
+                  source={{uri :'' }}
                   style={styles.posterImage}
                 />
                 <View className='flex-row justify-evenly w-[100%] flex-wrap gap-1'>
-                {item.classes_covered.map((item) => {
-                    return(
-                      <View className='bg-blue-400 rounded-lg p-1'>
-                        <Text className='text-sm'>{item}</Text>
-                      </View>
-                    )
-                  })}
+                    <Text>{item.department}</Text>
                 </View>
                 <Text style={{ fontSize: 24 }} numberOfLines={1}>
                   {item.name}
@@ -163,13 +170,7 @@ export default function TutorCarousel({index}  : {index : number}) {
                   <Text style={{ fontSize: 12 }} numberOfLines={3} className='pt-3'>
                     Availability:
                   </Text>
-                  {item.availability.map((item) => {
-                    return(
-                      <View className=''>
-                      <Text className='text-sm text-center font-bold' numberOfLines={1} adjustsFontSizeToFit allowFontScaling>  {item}</Text>
-                    </View>
-                    )
-                  })}
+                  <Text>{item.availability}</Text>
                 </View>
                 <View className='flex-2 flex-row justify-end items-end'>
                   <Text className='font-bold text-lg' numberOfLines={1} allowFontScaling adjustsFontSizeToFit>Location: {item.location}</Text>

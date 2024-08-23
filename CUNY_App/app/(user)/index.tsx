@@ -1,15 +1,17 @@
-import { Image, StyleSheet, Platform, View, Text, ImageBackground } from 'react-native';
+import { Image, StyleSheet, Platform, View, Text, ImageBackground, FlatList, ScrollView, Dimensions } from 'react-native';
 
 import { HelloWave } from '@/components/HelloWave';
 import ParallaxScrollView from '@/components/ParallaxScrollView';
 import { ThemedText } from '@/components/ThemedText';
 import { ThemedView } from '@/components/ThemedView';
-import Schedule from 'f-react-native-schedule';
-import WeekView from 'react-native-week-view';
 import { useProfile } from '@/providers/ProfileProvider';
 import { Icon } from 'react-native-paper';
+import { useUpcoming } from '@/providers/UpcomingProvider';
+import UpcomingCard from '@/components/UpcomingCard';
 export default function HomeScreen() {
   const { profile } = useProfile()
+  const { upcoming } = useUpcoming()
+  const { width, height } = Dimensions.get('screen')
   return (
       <ParallaxScrollView
         headerBackgroundColor={{ light: 'rgba(0,0,0,0)', dark: 'rgba(0,0,0,0)' }}
@@ -19,8 +21,8 @@ export default function HomeScreen() {
             style={styles.reactLogo}
           />
         }>
-        <View className='flex-row flex-1'>
-          <View>
+        <View className='flex-row'>
+          <View className='flex-1'>
             <Image source={{ uri : 'https://i.sstatic.net/l60Hf.png' }} height={80} width={80} style={{objectFit : 'cover', borderRadius : 50}}/>
           </View>
           <View className='flex-col flex-1 self-center justify-center'>
@@ -29,10 +31,11 @@ export default function HomeScreen() {
             </View>
             <View>
               <Text className='text-center font-bold text-lg'>{profile.firstName} {profile.lastName}</Text>
-            </View>
-            <View>
+        </View>
+
+          <View>
               <Text className='text-center font-bold text-gray-400'>Empil ID:{profile.emplid}</Text>
-            </View>
+          </View>
           </View>
         </View>
         <View className='flex-col'>
@@ -43,23 +46,25 @@ export default function HomeScreen() {
               style={{ height : 200, width : '100%', objectFit : 'cover', borderRadius : 10 }}
             />
           </View>
-          <Text className='text-xl font-bold'>Upcoming</Text>
-
         </View>
+
+        <View style={{ width : width }} className=''>
+            <Text className='text-xl font-bold'>Upcoming</Text>
+            <FlatList 
+              data={upcoming}
+              renderItem={({item}) => <View className='px-3'><UpcomingCard upcomings={item}/></View>}
+              contentContainerStyle={{ paddingVertical : 2, flexGrow : 1, paddingHorizontal : 8  }}
+              horizontal
+              showsHorizontalScrollIndicator={false}
+              style={{ width :width }}
+            />
+        </View>
+        
       </ParallaxScrollView>
   );
 }
 
 const styles = StyleSheet.create({
-  titleContainer: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    gap: 8,
-  },
-  stepContainer: {
-    gap: 8,
-    marginBottom: 8,
-  },
   reactLogo: {
     height: 178,
     width: 290,

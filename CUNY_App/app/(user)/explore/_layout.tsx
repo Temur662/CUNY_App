@@ -8,6 +8,7 @@ const ExploreStack = () => {
         <Stack.Screen name='Explore' />
         <Stack.Screen name='TutorsScreen' />
         <Stack.Screen name='TutorCarouselScreen' />
+        <Stack.Screen name='AcademicAndCounsler' />
     </Stack>
   )
 }

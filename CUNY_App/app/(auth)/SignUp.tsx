@@ -30,7 +30,7 @@ const SignUp = () => {
   const [ careerInfoDone, setCareerInfoDone ] = useState(false)
   const router = useRouter()
   const EthnicityPicker = () => {
-    const choices = [ 'American Indian/Alaska Native', 'Asian', 'Black or African American', 'Native Hawaiian or other Pacific Islander', 'White' ]
+    const choices = [ 'American Indian/Alaska Native', 'Asian', 'Black or African American', 'Native Hawaiian or other Pacific Islander', 'White', 'Hispanic' ]
     return(
         <Menu>
             <MenuTrigger style={{ width : '100%', height : '100%', borderWidth : 1 }}>

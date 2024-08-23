@@ -11,6 +11,7 @@ import { MenuProvider } from 'react-native-popup-menu';
 import ScheduleTimesProvider from '@/providers/SchdeuleProvider';
 import ProfileProvider from '@/providers/ProfileProvider';
 import LoginProvider from '@/providers/LoginProvider';
+import UpcomingProvider from '@/providers/UpcomingProvider';
 // Prevent the splash screen from auto-hiding before asset loading is complete.
 SplashScreen.preventAutoHideAsync();
 
@@ -36,15 +37,17 @@ export default function RootLayout() {
         <LoginProvider>
         <ProfileProvider>
             <ScheduleTimesProvider>
-              <PaperProvider>
-                <ThemeProvider value={colorScheme === 'dark' ? DarkTheme : DefaultTheme}>
-                  <Stack>
-                    <Stack.Screen name="(user)" options={{ headerShown: false }} />
-                    <Stack.Screen name="(auth)"  options={{ headerShown: false }} />
-                    <Stack.Screen name="+not-found" />
-                  </Stack>
-                </ThemeProvider>
-              </PaperProvider>
+              <UpcomingProvider>
+                <PaperProvider>
+                  <ThemeProvider value={colorScheme === 'dark' ? DarkTheme : DefaultTheme}>
+                    <Stack>
+                      <Stack.Screen name="(user)" options={{ headerShown: false }} />
+                      <Stack.Screen name="(auth)"  options={{ headerShown: false }} />
+                      <Stack.Screen name="+not-found" />
+                    </Stack>
+                  </ThemeProvider>
+                </PaperProvider>
+              </UpcomingProvider>
             </ScheduleTimesProvider>
           </ProfileProvider>
         </LoginProvider>

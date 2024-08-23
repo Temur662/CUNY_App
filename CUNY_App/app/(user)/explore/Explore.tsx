@@ -21,6 +21,18 @@ export default function TabTwoScreen() {
               <Text>Tutors</Text>
             </Pressable>
           </Link>
+
+          <Link href={'/(user)/explore/AcademicAndCounsler'} asChild>
+            <Pressable className=' border bg-white w-[90%]'>
+              <Text>Academic Advising and counseling</Text>
+            </Pressable>
+          </Link>
+
+          <Link href={'/(user)/explore/Scholarships'} asChild>
+            <Pressable className=' border bg-white w-[90%]'>
+              <Text>Scholarships</Text>
+            </Pressable>
+          </Link>
       </SafeAreaView>
     </ImageBackground>
   );

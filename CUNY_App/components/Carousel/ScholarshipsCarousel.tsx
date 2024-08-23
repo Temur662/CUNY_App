@@ -10,13 +10,15 @@ import {
   Animated,
   TouchableOpacity,
   Platform,
+  Linking,
 } from 'react-native';
 const { width, height } = Dimensions.get('window');
-import {Tutors} from '@/assets/data/Tutors'
+import { Scholarships } from '@/assets/data/Scholarships';
 import { LinearGradient } from 'expo-linear-gradient';
 import { Button } from 'react-native-paper';
 import { Upcomings } from '@/types';
 import { useUpcoming } from '@/providers/UpcomingProvider'
+import { useProfile } from '@/providers/ProfileProvider';
 const SPACING = 10;
 const ITEM_SIZE = Platform.OS === 'ios' ? width * 0.72 : width * 0.74;
 const EMPTY_ITEM_SIZE = (width - ITEM_SIZE) / 2;
@@ -56,7 +58,7 @@ const Backdrop = ({ tutors, scrollX, tutorIndex } : any) => {
             }}
           >
             <Image
-              source={{ uri: Tutors[tutorIndex].backdrop }}
+              source={{ }}
               style={{
                 width,
                 height: '100%',
@@ -80,26 +82,35 @@ const Backdrop = ({ tutors, scrollX, tutorIndex } : any) => {
 );
 };
 
-export default function TutorCarousel({index}  : {index : number}) {
+export default function ScholarshipsCarousel({scholarshipType}  : {scholarshipType : string}) {
   const { onSetUpComings } = useUpcoming()
+  const [ scholarships, setScholarships ] = React.useState<any[]>([])
+  const { profile } = useProfile()
   const scrollX = React.useRef(new Animated.Value(0)).current;
-  const onSelect = (tutor : number) => {
-    const newUpcoming : Upcomings = {
-      upcomingType : 'Tutoring',
-      pic : Tutors[index].tutors[tutor].pic,
-      time : Tutors[index].tutors[tutor].availability!,
-      speaker : Tutors[index].tutors[tutor].name!,
-      subject : Tutors[index].subject
+  const setDate = () => {
+    const personalScholarships = []
+    if( scholarshipType == 'Personal' ){
+        const personal = Scholarships.map((item) => { 
+            if( item.eligibility?.race.includes(profile.ethnicty)){
+                personalScholarships.push(item)
+            }
+        }
+        )
+        personalScholarships.splice(0, 0, {})
+        personalScholarships.push({})
+        setScholarships(personalScholarships)
     }
-    onSetUpComings(newUpcoming)
   }
+  React.useEffect(() => {
+    setDate()
+  }, [])
   return (
     <View style={styles.container}>
-      <Backdrop  scrollX={scrollX} tutorIndex={index}/> 
+      <Backdrop  scrollX={scrollX} tutorIndex={0}/> 
       <StatusBar hidden />
       <Animated.FlatList
         showsHorizontalScrollIndicator={false}
-        data={Tutors[index].tutors}
+        data={scholarships.length > 0 ? scholarships : Scholarships}
         
         horizontal
         bounces={false}
@@ -129,7 +140,9 @@ export default function TutorCarousel({index}  : {index : number}) {
             outputRange: [10, -30, 10],
             extrapolate: 'clamp',
           });
-      
+          const onPress = () => {
+            Linking.canOpenURL(item.link).then(() => Linking.openURL(item.link))
+          }
           return (
             <View style={{ width: ITEM_SIZE,  }} className=''>
               <Animated.View
@@ -140,45 +153,37 @@ export default function TutorCarousel({index}  : {index : number}) {
                   transform: [{ translateY }],
                   backgroundColor: 'white',
                   borderRadius: 34,
-                  height : height / 1.7
+                  height : height / 1.6
                 }}
               >
                 <Image
-                  source={{uri : item.pic }}
+                
                   style={styles.posterImage}
                 />
                 <View className='flex-row justify-evenly w-[100%] flex-wrap gap-1'>
-                {item.classes_covered.map((item) => {
-                    return(
-                      <View className='bg-blue-400 rounded-lg p-1'>
-                        <Text className='text-sm'>{item}</Text>
-                      </View>
-                    )
-                  })}
+                    <Text>{item.department}</Text>
                 </View>
-                <Text style={{ fontSize: 24 }} numberOfLines={1}>
+                <Text style={{ fontSize: 24 }} numberOfLines={1} adjustsFontSizeToFit className='font-bold'>
                   {item.name}
                 </Text>
-                <View className='flex-row flex-wrap flex-1 items-center'>
+                <View className='flex-col flex-1 items-start justify-start'>
                   <Text style={{ fontSize: 12 }} numberOfLines={3} className='pt-3'>
-                    Availability:
+                    Eligibilty:
                   </Text>
-                  {item.availability.map((item) => {
-                    return(
-                      <View className=''>
-                      <Text className='text-sm text-center font-bold' numberOfLines={1} adjustsFontSizeToFit allowFontScaling>  {item}</Text>
-                    </View>
-                    )
-                  })}
+                  {item.eligibility.race ? <Text style={{ fontSize : 13 }} className='font-semibold pl-2'>Ethnicity: {item.eligibility.race}</Text> : <></>}
+                  {item.eligibility.field_of_study ? <Text style={{ fontSize : 13 }} className='font-semibold pl-2'>Field of Study: {item.eligibility.field_of_study}</Text> : <></>}    
+                  {item.eligibility.income ? <Text style={{ fontSize : 13 }} className='font-semibold pl-2'>Income: {item.eligibility.income}</Text> : <></>}    
+                  {item.eligibility.status ? <Text style={{ fontSize : 13 }} className='font-semibold pl-2'>Status: {item.eligibility.Status}</Text> : <></>}    
+                  {item.eligibility.other ? <Text style={{ fontSize : 13 }} className='font-semibold pl-2'>Other: {item.eligibility.other}</Text> : <></>}    
                 </View>
                 <View className='flex-2 flex-row justify-end items-end'>
-                  <Text className='font-bold text-lg' numberOfLines={1} allowFontScaling adjustsFontSizeToFit>Location: {item.location}</Text>
+                  <Text className='text-sm text-center' allowFontScaling adjustsFontSizeToFit>{item.description}</Text>
                 </View>
                 <View className='flex-2 flex-row justify-end items-end'>
-                  <Text>{item.contact}</Text>
+                  <Text className='font-bold'>Award: {item.award_amount}</Text>
                 </View>
                 <View className='mt-2'> 
-                  <Button mode='contained' buttonColor='green' onPress={() => onSelect(index)}>Select</Button>
+                  <Button mode='contained' buttonColor='green'><Text numberOfLines={1} allowFontScaling adjustsFontSizeToFit className='text-sm' style={{ fontSize : 11}} onPress={onPress}>Deadline: {item.deadline}</Text></Button>
                 </View>
               </Animated.View>
             </View>

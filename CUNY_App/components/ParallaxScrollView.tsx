@@ -75,8 +75,7 @@ const styles = StyleSheet.create({
   },
   content: {
     flex: 1,
-    padding: 32,
-    gap: 16,
+    padding : 10,
     backgroundColor : 'rgba(0,0,0,0)'
   },
 });

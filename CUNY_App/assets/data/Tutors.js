@@ -6,6 +6,7 @@ export const Tutors = [
         {},
         {
           "name": "Mark Lee",
+          'pic' : 'https://xsgames.co/randomusers/assets/avatars/male/74.jpg',
           "classes_covered":[ "Calculus I","Calculus II", "Calculus III"],
           "availability": ["Monday 12:00 PM - 4:00 PM", "Wednesday, 12:00 PM - 4:00 PM"],
           "location": "5S Room 219",
@@ -13,6 +14,7 @@ export const Tutors = [
         },
         {
           "name": "Jenny Park",
+          'pic' : 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZDPLPw4yF_bQtbmzoHKYXuVRsWCG9kQnujObkKG6NbrWK4TZVDbUubEpGyRbnR_EnzmU&usqp=CAU',
           "classes_covered": ["Linear Algebra", "Differential Equations"],
           "availability": ["Tuesday 2:00 PM - 5:00 PM", "Thursday 2:00 PM - 5:00 PM"],
           "location": "5S Room 217",
@@ -20,6 +22,7 @@ export const Tutors = [
         },
         {
           "name": "David Chen",
+          'pic' : 'https://xsgames.co/randomusers/assets/avatars/male/46.jpg',
           "classes_covered": ["Precalculus", "Calculus I"],
           "availability": ["Friday, 10:00 AM - 2:00 PM"],
           "location": "5S Room 220",
@@ -93,6 +96,7 @@ export const Tutors = [
         {},
         {
           "name": "Daniel Carter",
+          'pic' : 'https://i1.sndcdn.com/avatars-000339084123-nag0p1-t240x240.jpg',
           "classes_covered": ["Intro to Programming", "Data Structures", "Artificial Intelligence"],
           "availability": ["Monday 2:00 PM - 6:00 PM", "Wednesday, 2:00 PM - 6:00 PM"],
           "location": "1P Room 220",
@@ -100,6 +104,7 @@ export const Tutors = [
         },
         {
           "name": "Megan White",
+          'pic' : 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGo3NzEGe8brVPWQldRx19s0F7MH7m-d2g5Q&s',
           "classes_covered": ["Algorithms", "Operating Systems", "Object-Oriented Software Design"],
           "availability": ["Tuesday 3:00 PM - 5:00 PM"," Thursday, 3:00 PM - 5:00 PM"],
           "location": "1P Room 222",
@@ -107,6 +112,7 @@ export const Tutors = [
         },
         {
           "name": "John Kim",
+          'pic' : 'https://avatars.githubusercontent.com/u/5821883?v=4',
           "classes_covered": ["Software Engineering", "Artificial Intelligence", "Computer Architecture"],
           "availability": ["Friday, 12:00 PM - 4:00 PM"],
           "location": "Computer Science Department (1P), Room 223",
