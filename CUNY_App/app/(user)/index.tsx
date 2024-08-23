@@ -52,7 +52,7 @@ export default function HomeScreen() {
             <Text className='text-xl font-bold'>Upcoming</Text>
             <FlatList 
               data={upcoming}
-              renderItem={({item}) => <View className='px-3'><UpcomingCard upcomings={item}/></View>}
+              renderItem={({item, index}) => <View className='px-3'><UpcomingCard upcomings={item} index={index}/></View>}
               contentContainerStyle={{ paddingVertical : 2, flexGrow : 1, paddingHorizontal : 8  }}
               horizontal
               showsHorizontalScrollIndicator={false}

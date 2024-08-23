@@ -23,7 +23,7 @@ export type Profile = {
 }
 
 export type Upcomings = {
-    upcomingType : string,
+    upcomingType : string, // tutoring = light blue, academic = light purple, counsling = light green 
     time : string[],
     speaker : string,
     subject : string,

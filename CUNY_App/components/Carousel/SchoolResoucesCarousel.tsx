@@ -96,7 +96,7 @@ export default function SchoolResourcesCaoursel({advisment}  : {advisment : stri
           onSetUpComings(newUpcoming)
     }else{
         const newUpcoming : Upcomings = {
-            upcomingType : 'Academic Advisment',
+            upcomingType : 'Counseling',
             pic : Counslers[advisor].pic,
             time : [Counslers[advisor].availability!],
             speaker : Counslers[advisor].name!,

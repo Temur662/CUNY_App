@@ -159,7 +159,7 @@ export default function TutorCarousel({index}  : {index : number}) {
                 <Text style={{ fontSize: 24 }} numberOfLines={1}>
                   {item.name}
                 </Text>
-                <View className='flex-row flex-wrap flex-1 items-center'>
+                <View className='flex-row flex-wrap items-center'>
                   <Text style={{ fontSize: 12 }} numberOfLines={3} className='pt-3'>
                     Availability:
                   </Text>
@@ -172,7 +172,7 @@ export default function TutorCarousel({index}  : {index : number}) {
                   })}
                 </View>
                 <View className='flex-2 flex-row justify-end items-end'>
-                  <Text className='font-bold text-lg' numberOfLines={1} allowFontScaling adjustsFontSizeToFit>Location: {item.location}</Text>
+                  <Text className='font-bold text-md' numberOfLines={1} allowFontScaling adjustsFontSizeToFit>Location: {item.location}</Text>
                 </View>
                 <View className='flex-2 flex-row justify-end items-end'>
                   <Text>{item.contact}</Text>

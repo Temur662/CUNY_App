@@ -14,6 +14,7 @@ export const Scholarships = [
     },
     {
         name: "Dell Scholars Program",
+    
         description: "Supports low-income, highly motivated students with financial assistance, a laptop, and ongoing support.",
         eligibility: {
             race: "Any",
