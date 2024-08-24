@@ -18,6 +18,7 @@ import { LinearGradient } from 'expo-linear-gradient';
 import { Button } from 'react-native-paper';
 import { Upcomings } from '@/types';
 import { useUpcoming } from '@/providers/UpcomingProvider'
+import GeminiLoading from './geminiLoading';
 const SPACING = 10;
 const ITEM_SIZE = Platform.OS === 'ios' ? width * 0.72 : width * 0.74;
 const EMPTY_ITEM_SIZE = (width - ITEM_SIZE) / 2;
@@ -31,7 +32,7 @@ const Loading = () => (
 
 const Backdrop = ({ tutors, scrollX, tutorIndex } : any) => {
   return (
-    <View style={{ height: '100%', width, position: 'absolute' }} className='border'>
+    <View style={{ height: '100%', width, position: 'absolute' }}>
       <FlatList
         data={[1,2,3]}
         keyExtractor={(item) => item + '-backdrop'}
@@ -108,6 +109,7 @@ export default function SchoolResourcesCaoursel({advisment}  : {advisment : stri
   }
   return (
     <View style={styles.container}>
+      <GeminiLoading loadingType='Academic'/>
       <Backdrop  scrollX={scrollX} tutorIndex={0}/> 
       <StatusBar hidden />
       <Animated.FlatList
@@ -157,7 +159,7 @@ export default function SchoolResourcesCaoursel({advisment}  : {advisment : stri
                 }}
               >
                 <Image
-                  source={{uri :'' }}
+                  source={{uri :item.pic }}
                   style={styles.posterImage}
                 />
                 <View className='flex-row justify-evenly w-[100%] flex-wrap gap-1'>

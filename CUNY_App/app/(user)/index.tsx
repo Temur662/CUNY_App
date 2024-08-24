@@ -23,7 +23,7 @@ export default function HomeScreen() {
         }>
         <View className='flex-row'>
           <View className='flex-1'>
-            <Image source={{ uri : 'https://i.sstatic.net/l60Hf.png' }} height={80} width={80} style={{objectFit : 'cover', borderRadius : 50}}/>
+            <Image source={require('@/assets/images/ab.png')} style={{objectFit : 'cover', borderRadius : 50, height : 80, width: 80}}/>
           </View>
           <View className='flex-col flex-1 self-center justify-center'>
             <View style={{ alignItems : 'flex-end'}}>

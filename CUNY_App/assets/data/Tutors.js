@@ -38,23 +38,26 @@ export const Tutors = [
         {},
         {
           "name": "Tina Gonzales",
+            "pic": "https://arashlaw.com/wp-content/uploads/2024/05/AK-LAWYER-PATRICA-CUARENTA.webp",
           "classes_covered": ["Physics 101" ,"Physics 102", "Physics 203"],
           "availability": ["Tuesday 1:00 PM - 5:00 PM", "Thursday 1:00 PM - 5:00 PM"],
-          "location": "6S Room 118",
+          "location": "Physics Department (6S), Room 118",
           "contact": "tgonzales@csi.cuny.edu"
         },
         {
           "name": "Dr. Alan Thompson",
+          "pic": "https://s10251.pcdn.co/wp-content/uploads/2024/01/2024-alan-head-black.jpg",
           "classes_covered": ["General Physics I", "General Physics II"],
           "availability": ["Monday 10:00 AM - 1:00 PM", "Friday, 10:00 AM - 1:00 PM"],
-          "location": "6S Room 110",
+          "location": "Physics Department (6S), Room 110",
           "contact": "athompson@csi.cuny.edu"
         },
         {
           "name": "Lisa Morales",
+          "pic": "https://pbs.twimg.com/profile_images/1055556907707105280/JLNJCXMU_400x400.jpg",
           "classes_covered": ["Physics for Engineers", "Electromagnetism"],
           "availability": ["Wednesday, 11:00 AM - 3:00 PM"],
-          "location": "6S Room 115",
+          "location": "Physics Department (6S), Room 115",
           "contact": "lmorales@csi.cuny.edu"
         },
         {}
@@ -67,23 +70,26 @@ export const Tutors = [
         {},
         {
           "name": "Dr. Samuel Green",
-          "classes_covered": ["General Chemistry", "Organic Chemistry"],
+          "pic": "https://lh5.googleusercontent.com/proxy/fne4P98CDytqQeXf8W-yrGjRgJIXZAkNLZOXl8HFHGYKGZ5U2bpu7ZAxTEjLvq0Me5zqJ9xfMx13duWGL6P296-oQBN1-ruHW3CCNKryEKIRKcT-dFna93he1iA0lzzRQKbJUa3W",
+          "classes_covered":  ["General Chemistry", "Organic Chemistry"],
           "availability": ["Monday 10:00 AM - 1:00 PM", "Friday, 10:00 AM - 1:00 PM"],
-          "location": "6S Room 119",
+          "location": "Chemistry Department (6S), Room 119",
           "contact": "sgreen@csi.cuny.edu"
         },
         {
           "name": "Anna Bell",
-          "classes_covered": ["Organic Chemistry I", "Organic Chemistry II"],
+          "pic": "",
+          "classes_covered":["Organic Chemistry I", "Organic Chemistry II"],
           "availability": ["Tuesday 12:00 PM - 3:00 PM", "Thursday, 12:00 PM - 3:00 PM"],
-          "location": "6S Room 122",
+          "location": "Chemistry Department (6S), Room 122",
           "contact": "abell@csi.cuny.edu"
         },
         {
           "name": "Michael White",
+          "pic": "https://upload.wikimedia.org/wikipedia/commons/6/6c/Michael_White_photo.jpg",
           "classes_covered": ["Physical Chemistry", "Biochemistry"],
           "availability": ["Wednesday 1:00 PM - 4:00 PM","Friday, 1:00 PM - 4:00 PM"],
-          "location": "6S Room 125",
+          "location": "Chemistry Department (6S), Room 125",
           "contact": "mwhite@csi.cuny.edu"
         },
         {}
@@ -128,13 +134,15 @@ export const Tutors = [
         {},
         {
           "name": "Dr. Jessica Brown",
+          "pic": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRF6Hk_-hjf-pYapEzYEs7LKWVuC-HM1g556A&s",
           "classes_covered": ["General Biology", "General Anatomy & Physiology"],
           "availability": ["Tuesday 1:00 PM - 5:00 PM", "Thursday, 1:00 PM - 5:00 PM"],
-          "location": "6S Room 209",
+          "location": "Biology Department (6S), Room 209",
           "contact": "jbrown@csi.cuny.edu"
         },
         {
           "name": "Eric Miles",
+          "pic": "",
           "classes_covered": ["Genetics", "Molecular Biology"],
           "availability": ["Monday 12:00 PM - 4:00 PM", "Wednesday, 12:00 PM - 4:00 PM"],
           "location": "Biology Department (6S), Room 213",
@@ -142,9 +150,10 @@ export const Tutors = [
         },
         {
           "name": "Samantha Lee",
+          "pic": "",
           "classes_covered": ["Microbiology", "Evolutionary Biology"],
           "availability": ["Friday, 10:00 AM - 2:00 PM"],
-          "location": "6S Room 215",
+          "location": "Biology Department (6S), Room 215",
           "contact": "slee@csi.cuny.edu"
         },
         {}

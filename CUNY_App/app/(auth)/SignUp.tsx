@@ -191,21 +191,21 @@ const SignUp = () => {
         <Stack.Screen options={{ headerBackTitleVisible : false, headerTransparent : true, headerTitle : '' }} />
         <SafeAreaView className='flex-1'>
             <View className='w-[100%] bg-[#0D509D] h-[15%] flex-row items-center justify-evenly'>
-                { stageInfo.map((item, index) => {
-                    return(
-                        <View style={{ width : '30%', height : '70%' }} className='items-center justify-center flex-col'> 
-                            <View style={[{ backgroundColor : currentStage == index ? 'white' : 'gray'}, {borderRadius : 50, width : '48%', height : '70%' }]}>
-
-                            </View>
-                            <Text className='text-center text-white'>{item}</Text>
-                        </View>
-                    )
-                    })
-                }
+                <View style={{ width : '30%', height : '70%' }} className='items-center justify-center flex-col'> 
+                    <View style={[{ backgroundColor : currentStage == 0 ? 'white' : 'green'}, {borderRadius : 50, width : '48%', height : '70%' }]} className='items-center justify-center'>
+                        { currentStage == 0 ? <></> :  <Icon source={'check-bold'} size={40} color='white'/>}  
+                    </View>
+                    <Text className='text-center text-white'>Personal Information</Text>
+                </View>
+                <View style={{ width : '30%', height : '70%' }} className='items-center justify-center flex-col'> 
+                    <View style={[{ backgroundColor : currentStage == 1 ? 'white' : 'gray'}, {borderRadius : 50, width : '48%', height : '70%' }]}>
+                    </View>
+                    <Text className='text-center text-white'>Career Information</Text>
+                </View>
             </View>
             <View className='flex-col gap-y-2 w-[100%] bg-gray-300 mt-2 p-4 py-8' style={{ borderRadius : 50 }}>
                 <View className='w-[100%] items-center justify-center'>
-                { currentStage == 0 &&  <Text className='text-2xl font-bold'>Personal Information</Text> }  
+                { currentStage == 0 && <Text className='text-2xl font-bold'>Personal Information</Text>}  
                 {currentStage == 1 && <Text className='text-2xl font-bold'>Career Information</Text>}              
                 </View>
                 { currentStage == 0 && (
