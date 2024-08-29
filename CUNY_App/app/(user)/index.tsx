@@ -23,7 +23,7 @@ export default function HomeScreen() {
         }>
         <View className='flex-row'>
           <View className='flex-1'>
-            <Image source={{ uri : 'https://i.sstatic.net/l60Hf.png' }} height={80} width={80} style={{objectFit : 'cover', borderRadius : 50}}/>
+            <Image source={require('@/assets/images/ab.png')} style={{objectFit : 'cover', borderRadius : 50, height : 80, width: 80}}/>
           </View>
           <View className='flex-col flex-1 self-center justify-center'>
             <View style={{ alignItems : 'flex-end'}}>
@@ -52,7 +52,7 @@ export default function HomeScreen() {
             <Text className='text-xl font-bold'>Upcoming</Text>
             <FlatList 
               data={upcoming}
-              renderItem={({item}) => <View className='px-3'><UpcomingCard upcomings={item}/></View>}
+              renderItem={({item, index}) => <View className='px-3'><UpcomingCard upcomings={item} index={index}/></View>}
               contentContainerStyle={{ paddingVertical : 2, flexGrow : 1, paddingHorizontal : 8  }}
               horizontal
               showsHorizontalScrollIndicator={false}

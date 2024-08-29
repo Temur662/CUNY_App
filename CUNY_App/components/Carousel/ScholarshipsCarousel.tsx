@@ -19,6 +19,7 @@ import { Button } from 'react-native-paper';
 import { Upcomings } from '@/types';
 import { useUpcoming } from '@/providers/UpcomingProvider'
 import { useProfile } from '@/providers/ProfileProvider';
+import GeminiLoading from './geminiLoading';
 const SPACING = 10;
 const ITEM_SIZE = Platform.OS === 'ios' ? width * 0.72 : width * 0.74;
 const EMPTY_ITEM_SIZE = (width - ITEM_SIZE) / 2;
@@ -32,7 +33,7 @@ const Loading = () => (
 
 const Backdrop = ({ tutors, scrollX, tutorIndex } : any) => {
   return (
-    <View style={{ height: '100%', width, position: 'absolute' }} className='border'>
+    <View style={{ height: '100%', width, position: 'absolute' }} >
       <FlatList
         data={[1,2,3]}
         keyExtractor={(item) => item + '-backdrop'}
@@ -106,6 +107,7 @@ export default function ScholarshipsCarousel({scholarshipType}  : {scholarshipTy
   }, [])
   return (
     <View style={styles.container}>
+      <GeminiLoading loadingType='' />
       <Backdrop  scrollX={scrollX} tutorIndex={0}/> 
       <StatusBar hidden />
       <Animated.FlatList
@@ -157,7 +159,7 @@ export default function ScholarshipsCarousel({scholarshipType}  : {scholarshipTy
                 }}
               >
                 <Image
-                
+                  source={{ uri : item.pic }}
                   style={styles.posterImage}
                 />
                 <View className='flex-row justify-evenly w-[100%] flex-wrap gap-1'>
@@ -172,7 +174,8 @@ export default function ScholarshipsCarousel({scholarshipType}  : {scholarshipTy
                   </Text>
                   {item.eligibility.race ? <Text style={{ fontSize : 13 }} className='font-semibold pl-2'>Ethnicity: {item.eligibility.race}</Text> : <></>}
                   {item.eligibility.field_of_study ? <Text style={{ fontSize : 13 }} className='font-semibold pl-2'>Field of Study: {item.eligibility.field_of_study}</Text> : <></>}    
-                  {item.eligibility.income ? <Text style={{ fontSize : 13 }} className='font-semibold pl-2'>Income: {item.eligibility.income}</Text> : <></>}    
+                  {item.eligibility.income ? <Text style={{ fontSize : 13 }} className='font-semibold pl-2'>Income: {item.eligibility.income}</Text> : <></>}   
+                  { item.eligibility.age ? <Text style={{ fontSize : 13 }} className='font-semibold pl-2'>Income: {item.eligibility.age}</Text> : <></>} 
                   {item.eligibility.status ? <Text style={{ fontSize : 13 }} className='font-semibold pl-2'>Status: {item.eligibility.Status}</Text> : <></>}    
                   {item.eligibility.other ? <Text style={{ fontSize : 13 }} className='font-semibold pl-2'>Other: {item.eligibility.other}</Text> : <></>}    
                 </View>

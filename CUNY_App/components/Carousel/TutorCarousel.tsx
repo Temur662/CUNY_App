@@ -8,15 +8,18 @@ import {
   Image,
   Dimensions,
   Animated,
+  
   TouchableOpacity,
   Platform,
 } from 'react-native';
 const { width, height } = Dimensions.get('window');
 import {Tutors} from '@/assets/data/Tutors'
 import { LinearGradient } from 'expo-linear-gradient';
-import { Button } from 'react-native-paper';
+import { ActivityIndicator, Button } from 'react-native-paper';
 import { Upcomings } from '@/types';
 import { useUpcoming } from '@/providers/UpcomingProvider'
+import { useSharedValue, withTiming, Easing, useAnimatedStyle, runOnJS } from 'react-native-reanimated';
+import GeminiLoading from './geminiLoading';
 const SPACING = 10;
 const ITEM_SIZE = Platform.OS === 'ios' ? width * 0.72 : width * 0.74;
 const EMPTY_ITEM_SIZE = (width - ITEM_SIZE) / 2;
@@ -30,7 +33,7 @@ const Loading = () => (
 
 const Backdrop = ({ tutors, scrollX, tutorIndex } : any) => {
   return (
-    <View style={{ height: '100%', width, position: 'absolute' }} className='border'>
+    <View style={{ height: '100%', width, position: 'absolute' }}>
       <FlatList
         data={[1,2,3]}
         keyExtractor={(item) => item + '-backdrop'}
@@ -82,7 +85,10 @@ const Backdrop = ({ tutors, scrollX, tutorIndex } : any) => {
 
 export default function TutorCarousel({index}  : {index : number}) {
   const { onSetUpComings } = useUpcoming()
+  const [ loading, setLoading ] = React.useState(true)
+  const opacity = useSharedValue(1)
   const scrollX = React.useRef(new Animated.Value(0)).current;
+
   const onSelect = (tutor : number) => {
     const newUpcoming : Upcomings = {
       upcomingType : 'Tutoring',
@@ -95,12 +101,12 @@ export default function TutorCarousel({index}  : {index : number}) {
   }
   return (
     <View style={styles.container}>
+      <GeminiLoading loadingType='Tutor'/>
       <Backdrop  scrollX={scrollX} tutorIndex={index}/> 
       <StatusBar hidden />
       <Animated.FlatList
         showsHorizontalScrollIndicator={false}
         data={Tutors[index].tutors}
-        
         horizontal
         bounces={false}
         decelerationRate={Platform.OS === 'ios' ? 0 : 0.98}
@@ -159,7 +165,7 @@ export default function TutorCarousel({index}  : {index : number}) {
                 <Text style={{ fontSize: 24 }} numberOfLines={1}>
                   {item.name}
                 </Text>
-                <View className='flex-row flex-wrap flex-1 items-center'>
+                <View className='flex-row flex-wrap items-center'>
                   <Text style={{ fontSize: 12 }} numberOfLines={3} className='pt-3'>
                     Availability:
                   </Text>
@@ -172,7 +178,7 @@ export default function TutorCarousel({index}  : {index : number}) {
                   })}
                 </View>
                 <View className='flex-2 flex-row justify-end items-end'>
-                  <Text className='font-bold text-lg' numberOfLines={1} allowFontScaling adjustsFontSizeToFit>Location: {item.location}</Text>
+                  <Text className='font-bold text-md' numberOfLines={1} allowFontScaling adjustsFontSizeToFit>Location: {item.location}</Text>
                 </View>
                 <View className='flex-2 flex-row justify-end items-end'>
                   <Text>{item.contact}</Text>
